@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 15vmin;
+  pointer-events: none;
+}
+
+.Social-logo {
+  height: 64px;
+  pointer-events: none;
+  fill: #7D7D7D;
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #7D7D7D;
+}
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+}
+
