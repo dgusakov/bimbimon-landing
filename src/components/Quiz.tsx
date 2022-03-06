@@ -9,7 +9,7 @@ import HeaderLight from "./labels/HeaderLight";
 function Quiz(props: any) {
   let path = props.path ? props.path : ".";
   let params = useParams();
-  const [game] = questions.filter((el) => el.name == params.game);
+  const [game] = questions.filter((el) => el.name === params.game);
   return (
     <div>
       <div className="container mb-3">
