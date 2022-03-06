@@ -18,8 +18,8 @@ function refreshPage() {
 function Question(props: any) {
   let urlParams = useParams();
   console.log(urlParams);
-  const [game] = questions.filter((el) => el.name == urlParams.game);
-  const [topic] = game.topics.filter((el) => el.name == urlParams.topic);
+  const [game] = questions.filter((el) => el.name === urlParams.game);
+  const [topic] = game.topics.filter((el) => el.name === urlParams.topic);
   console.log(game);
   console.log(topic);
   const question = topic.questions[getRandomInt(topic.questions.length)];
