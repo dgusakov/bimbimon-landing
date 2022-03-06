@@ -2,8 +2,6 @@ import "../css//App.css";
 import questions from "../data/questions.json";
 import React from "react";
 import { useParams } from "react-router-dom";
-import { Row } from "react-bootstrap";
-import NotFound from "./NotFound";
 import BackButton from "./navs/BackButton";
 import HeaderBold from "./labels/HeaderBold";
 import HeaderLight from "./labels/HeaderLight";

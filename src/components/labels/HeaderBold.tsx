@@ -3,7 +3,7 @@ import React from "react";
 
 function HeaderBold(props: any) {
   return (
-    <div className="container">
+    <div className="container px-0">
       <span className="header-bold">{props.name}</span>
     </div>
   );
