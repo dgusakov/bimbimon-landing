@@ -29,13 +29,16 @@
 .Social-logo {
   height: 40px;
   max-height: 8vw;
+  max-width: 8vw;
   min-height: 20px;
+  min-width: 20px;
   pointer-events: none;
   fill: #7D7D7D;
 }
 
 .Social-logo-inline {
   height: 25px;
+  width: 25px;
   pointer-events: none;
 }
 
