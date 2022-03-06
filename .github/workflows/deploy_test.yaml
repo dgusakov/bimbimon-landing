@@ -28,3 +28,4 @@ jobs:
           source: "build/*"
           target: ${{ secrets.TEST_URL}}/public_html
           rm: true
+          strip_components: 1
