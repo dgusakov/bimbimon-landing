@@ -12,12 +12,6 @@
   pointer-events: none;
 }
 
-.Social-logo {
-  height: 64px;
-  pointer-events: none;
-  fill: #7D7D7D;
-}
-
 .App-header {
   background-color: #ffffff;
   min-height: 10vh;
@@ -34,9 +28,15 @@
 
 .Social-logo {
   height: 40px;
-  max-height: 15vw;
+  max-height: 8vw;
+  min-height: 20px;
   pointer-events: none;
   fill: #7D7D7D;
+}
+
+.Social-logo-inline {
+  height: 25px;
+  pointer-events: none;
 }
 
 .header-light {
@@ -53,6 +53,15 @@
   line-height: 35px;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+}
+
+.header-bold-center {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 35px;
+  letter-spacing: -0.02em;
+  text-align: center;
 }
 
 .brand-header {
