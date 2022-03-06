@@ -1,5 +1,5 @@
 import "../css//App.css";
-import questions from "../data/questions.json";
+import { IGame, Questions } from "../data/questions";
 import React from "react";
 import ButtonWithArrow from "./navs/ButtonWithArrow";
 import HeaderBoldCenter from "./labels/HeaderBoldCenter";
@@ -13,8 +13,8 @@ function QuizMain(props: any) {
         <HeaderBoldCenter name="Выберите игру" />
       </div>
       <div className="container">
-        {questions.map((el: any, index: number) => (
-          <ButtonWithArrow displayName={el.displayName} link={path + "/"+ el.name} index={index} />
+        {Questions.map((el: IGame, index: number) => (
+          <ButtonWithArrow displayName={el.displayName} link={path + "/"+ el.name} key={index} />
           ))}
       </div>
     </div>

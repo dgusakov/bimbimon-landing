@@ -3,7 +3,7 @@ import React from "react";
 
 function ButtonWithArrow(props: any) {
   return (
-    <div className="row" key={props.index}>
+    <div className="row">
     <a href={props.link} className="text-black text-link">
       <div className="row">
         <div className="col-auto">{props.displayName}</div>
