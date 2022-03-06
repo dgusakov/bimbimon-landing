@@ -1,8 +1,18 @@
 .main {
-  min-height: -webkit-fill-available;
+  min-height: 100vh !important;
 }
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+  .main {
+    min-height: -webkit-fill-available !important;
+  }
+}
+}
+
+
 html {
-  height: -webkit-fill-available;
+  min-height: -webkit-fill-available;
 }
 
 .App {

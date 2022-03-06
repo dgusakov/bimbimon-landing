@@ -11,7 +11,7 @@ import Question from "./Question";
 
 function App() {
   return (
-    <div className="d-flex flex-column min-vh-100 main">
+    <div className="d-flex flex-column main">
       <BrowserRouter>
         <Header />
         <main className="flex-shrink-0 mt-3">
