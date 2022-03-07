@@ -8,7 +8,7 @@ const year = new Date().getFullYear();
 
 function Footer() {
   return (
-    <footer className="footer mt-auto py-3 bg-bimbimon-light">
+    <footer className="footer mt-auto py-3 App-footer">
     <div className="container">
       <div className="row justify-content-center mb-2">
         <ul className="nav col justify-content-center">
@@ -17,7 +17,7 @@ function Footer() {
               <YouTubeLogo className="Social-logo" />
             </a>
           </li>
-          <li className="nav-item px-sm-5 px-3">
+          <li className="nav-item px-sm-5 px-2">
             <a className="text-muted p-3" href="https://www.instagram.com/bimbimon_tm/">
               <InstagramLogo className="Social-logo"/>
             </a>
