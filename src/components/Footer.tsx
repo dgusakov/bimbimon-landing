@@ -10,7 +10,7 @@ function Footer() {
   return (
     <footer className="footer mt-auto py-3 bg-bimbimon-light">
     <div className="container">
-      <div className="row justify-content-center mb-3">
+      <div className="row justify-content-center mb-2">
         <ul className="nav col justify-content-center">
           <li className="nav-item px-4">
             <a className="text-muted p-3" href="https://www.youtube.com/channel/UCKziH5v62PIeqmjxzZo0WFA/featured">
@@ -30,7 +30,7 @@ function Footer() {
         </ul>
       </div>
       <div className="row justify-content-center text-muted">
-        <div className="col-auto p-1">
+        <div className="col-auto">
           <span>&copy; БимБиМон, {year}</span>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import "../../css//App.css";
 import React from "react";
 
-function ButtonWithIcon(props: any) {
+function ListButtonWithIcon(props: any) {
   return (
     <div className="row">
     <a href={props.link} className="text-black text-link">
@@ -15,4 +15,4 @@ function ButtonWithIcon(props: any) {
   );
 }
 
-export default ButtonWithIcon;
+export default ListButtonWithIcon;

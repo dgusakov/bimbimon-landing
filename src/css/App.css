@@ -44,7 +44,7 @@ html {
 }
 
 .Social-logo {
-  height: 40px;
+  height: 32px;
   max-height: 8vw;
   max-width: 8vw;
   min-height: 20px;
@@ -56,6 +56,12 @@ html {
 .Social-logo-inline {
   height: 25px;
   width: 25px;
+  pointer-events: none;
+}
+
+.Arrow-inline {
+  height: 16px;
+  width: 16px;
   pointer-events: none;
 }
 

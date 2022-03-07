@@ -1,13 +1,16 @@
 import "../../css//App.css";
 import React from "react";
+import { ReactComponent as ArrowRight } from "../../img/arrow-right.svg";
 
-function ButtonWithArrow(props: any) {
+function ListButtonWithArrow(props: any) {
   return (
     <div className="row">
     <a href={props.link} className="text-black text-link">
       <div className="row">
         <div className="col-auto">{props.displayName}</div>
-        <div className="col col-1 px-1">&#8594;</div>
+        <div className="col col-1 px-1">
+          <ArrowRight className="Arrow-inline" />
+        </div>
       </div>
       <hr className="mt-1" />
     </a>
@@ -15,4 +18,4 @@ function ButtonWithArrow(props: any) {
   );
 }
 
-export default ButtonWithArrow;
+export default ListButtonWithArrow;

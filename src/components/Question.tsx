@@ -35,7 +35,7 @@ function Question(props: any) {
             <div id="questionBody">{question.question}</div>
           </div>
           <Answer answer={question.answer} />
-          <div className="d-grid gap-2">
+          <div className="d-grid gap-2 mb-4">
             <button
               id="switchQuestion"
               className="btn btn-scd"
