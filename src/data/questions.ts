@@ -379,4 +379,21 @@ export const Questions: IGame[] = [
       },
     ],
   },
+  {
+    name: "сars",
+    displayName: "Автомобили",
+    topics: [
+      {
+        name: "to-be-done",
+        displayName: "Вопросы в разработке",
+        questions: [
+          {
+            question: "Скоро тут будет вопрос",
+            answer:
+              "А тут будет ответ",
+          },
+        ],
+      },
+    ],
+  },
 ];
