@@ -1,0 +1,31 @@
+name: Deploy to test stand
+
+on:
+  push:
+    branches: [develop]
+
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      
+      - run: npm ci
+      - run: npm run build --if-present
+
+      - name: Copy build files to host
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.BEGET_HOST }}
+          username: ${{ secrets.BEGET_USER }}
+          password: ${{ secrets.BEGET_PASSWORD }}
+          source: "build/*"
+          target: ${{ secrets.TEST_URL}}/public_html
+          rm: true
+          strip_components: 1

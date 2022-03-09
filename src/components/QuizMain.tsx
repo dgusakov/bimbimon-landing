@@ -1,8 +1,9 @@
 import "../css//App.css";
-import questions from "../data/questions.json";
+import { IGame, Questions } from "../data/questions";
 import React from "react";
-import ButtonWithArrow from "./navs/ButtonWithArrow";
+import ListButtonWithArrow from "./navs/ListButtonWithArrow";
 import HeaderBoldCenter from "./labels/HeaderBoldCenter";
+import ListItem from "./navs/ListItem";
 
 
 function QuizMain(props: any) {
@@ -13,9 +14,10 @@ function QuizMain(props: any) {
         <HeaderBoldCenter name="Выберите игру" />
       </div>
       <div className="container">
-        {questions.map((el: any, index: number) => (
-          <ButtonWithArrow displayName={el.displayName} link={path + "/"+ el.name} index={index} />
+        {Questions.map((el: IGame, index: number) => (
+          <ListButtonWithArrow displayName={el.displayName} link={path + "/"+ el.name} key={index} />
           ))}
+        <ListItem displayName="Больше книг уже скоро!" />
       </div>
     </div>
   );
