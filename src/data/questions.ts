@@ -380,7 +380,7 @@ export const Questions: IGame[] = [
     ],
   },
   {
-    name: "сars",
+    name: "cars",
     displayName: "Автомобили",
     topics: [
       {
