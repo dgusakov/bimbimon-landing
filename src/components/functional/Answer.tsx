@@ -10,7 +10,7 @@ function Answer(props: any) {
       <div id="answer" style={{ display: showAnswer ? "block" : "none" }}>
         <HeaderLight name="Ответ" />
         <div className="mt-3" id="question">
-          <div id="answerBody">{props.answer}</div>
+          <div id="answerBody">{props.children}</div>
         </div>
       </div>
       <div className="d-grid gap-2 mb-2 mt-4">

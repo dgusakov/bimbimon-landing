@@ -123,3 +123,9 @@ html {
 .Error-img {
   max-width: 70vw;
 }
+
+.Question-img {
+  max-width: 60vw;
+  width: 200px;
+  pointer-events: none;
+}
