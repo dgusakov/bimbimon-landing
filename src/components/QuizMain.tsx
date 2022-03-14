@@ -17,7 +17,7 @@ function QuizMain(props: any) {
         {Questions.map((el: IGame, index: number) => (
           <ListButtonWithArrow displayName={el.displayName} link={path + "/"+ el.name} key={index} />
           ))}
-        <ListItem displayName="Больше книг уже скоро!" />
+        <ListItem displayName="Больше книг-игр уже скоро!" />
       </div>
     </div>
   );
