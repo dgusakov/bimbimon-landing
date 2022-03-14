@@ -129,3 +129,9 @@ html {
   width: 200px;
   pointer-events: none;
 }
+
+.Question-img-sm {
+  max-width: 40vw;
+  width: 150px;
+  pointer-events: none;
+}
