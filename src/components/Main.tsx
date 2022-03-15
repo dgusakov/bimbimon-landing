@@ -26,7 +26,7 @@ function Main() {
         <ListButtonWithIcon displayName="Познавательные ролики" link="https://www.youtube.com/channel/UCKziH5v62PIeqmjxzZo0WFA/featured" key="youtube">
             <YouTubeLogo className="Social-logo-inline" />
         </ListButtonWithIcon>
-        <ListButtonWithIcon displayName={["Всегда ", <strong key="1">ВКонатакте</strong>]} link="https://vk.com/club210948125" key="vk">
+        <ListButtonWithIcon displayName={["Всегда ", <strong key="1">ВКонтакте</strong>]} link="https://vk.com/club210948125" key="vk">
             <VKLogo className="Social-logo-inline" />
         </ListButtonWithIcon>
       </div>
