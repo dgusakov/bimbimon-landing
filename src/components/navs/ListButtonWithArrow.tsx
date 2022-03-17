@@ -7,10 +7,7 @@ function ListButtonWithArrow(props: any) {
     <div className="row">
     <a href={props.link} className="text-black text-link">
       <div className="row">
-        <div className="col-auto">{props.displayName}</div>
-        <div className="col col-1 px-1">
-          <ArrowRight className="Arrow-inline" />
-        </div>
+        <div className="col-auto">{props.displayName}&nbsp;<ArrowRight className="Arrow-inline" /></div>
       </div>
       <hr className="mt-1" />
     </a>
