@@ -1,5 +1,4 @@
 import "../css//App.css";
-import { ReactComponent as InstagramLogo } from '../img/instagram.svg';
 import { ReactComponent as YouTubeLogo } from "../img/youtube.svg";
 import { ReactComponent as Cart } from "../img/cart.svg";
 import { ReactComponent as VKLogo } from '../img/vk.svg';
@@ -18,12 +17,7 @@ function Footer() {
               <YouTubeLogo className="Social-logo" />
             </a>
           </li>
-          <li className="nav-item px-sm-4 px-1">
-            <a className="text-muted p-3" href="https://www.instagram.com/bimbimon_tm/">
-              <InstagramLogo className="Social-logo"/>
-            </a>
-          </li>
-          <li className="nav-item px-sm-4 px-1">
+          <li className="nav-item px-sm-5 px-3">
             <a className="text-muted p-3" href="https://vk.com/club210948125">
               <VKLogo className="Social-logo"/>
             </a>

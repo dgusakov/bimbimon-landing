@@ -135,3 +135,7 @@ html {
   width: 150px;
   pointer-events: none;
 }
+
+.no-wrap {
+  white-space: nowrap;
+}
