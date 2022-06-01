@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Bump version and update CHANGELOG.MD
         id: changelog
-        uses: TriPSs/conventional-changelog-action@v3
+        uses: TriPSs/conventional-changelog-action@v3.11.0
         with:
           git-message: "chore(release): {version}"
           tag-prefix: ""
