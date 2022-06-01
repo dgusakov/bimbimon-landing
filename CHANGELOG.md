@@ -1,3 +1,12 @@
+## [1.2.1](https://github.com/dgusakov/bimbimon-landing/compare/1.2.0...1.2.1) (2022-06-01)
+
+
+### Bug Fixes
+
+* Use node 16.x for build ([80588ee](https://github.com/dgusakov/bimbimon-landing/commit/80588eed78fd30f670b6751004b8df84a65946b5))
+
+
+
 # [1.2.0](https://github.com/dgusakov/bimbimon-landing/compare/1.1.0...1.2.0) (2022-06-01)
 
 
