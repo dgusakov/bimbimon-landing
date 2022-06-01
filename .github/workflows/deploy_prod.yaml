@@ -1,22 +1,42 @@
 name: Deploy to production stand
 
 on:
+  workflow_dispatch:
+  workflow_call:
+    inputs:
+      tag:
+        description: "tag to deploy from"
+        default: ""
+        required: false
+        type: string
   push:
-    branches: [main]
+    branches:
+      - "!*"
+    tags:
+      - "*"
 
 jobs:
   Deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout default
+        if: ${{ inputs.tag == "" }}
+        uses: actions/checkout@v3
+      
+      - name: Checkout tag
+        if: ${{ inputs.tag != "" }}
+        uses: actions/checkout@v3
+        with:
+          ref: refs/tags/${{ inputs.tag }}
 
-      - name: Use Node.js
-        uses: actions/setup-node@v1
+      - name: Install Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 14.x
       
       - run: npm ci
+
       - run: npm run build --if-present
 
       - name: Copy build files to host
