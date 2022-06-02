@@ -16,10 +16,10 @@ function Main() {
       </div>
       <HeaderBoldCenter name="Детские книги БимБиМон" key="social"/>
       <div className="container mt-3 mb-3">
-        <ListButtonWithIcon displayName="Купить наши книги" link="https://taplink.cc/bimbimon_tm" key="buy">
+        <ListButtonWithIcon displayName="Купить наши книги" link="/buy" key="buy">
             <Cart className="Social-logo-inline" />
         </ListButtonWithIcon>
-        <ListButtonWithIcon displayName="Познавательные ролики" link="https://www.youtube.com/channel/UCKziH5v62PIeqmjxzZo0WFA/featured" key="youtube">
+        <ListButtonWithIcon displayName="Познавательные ролики" link="/videos" key="videos">
             <YouTubeLogo className="Social-logo-inline" />
         </ListButtonWithIcon>
         <ListButtonWithIcon displayName={["Всегда ", <strong key="1">ВКонтакте</strong>]} link="https://vk.com/club210948125" key="vk">
