@@ -1,3 +1,12 @@
+## [1.3.1](https://github.com/dgusakov/bimbimon-landing/compare/1.3.0...1.3.1) (2022-06-09)
+
+
+### Bug Fixes
+
+* muscles video url ([507d12d](https://github.com/dgusakov/bimbimon-landing/commit/507d12d2558b2c26e7d870ead7f39780e2dc0cc8))
+
+
+
 # [1.3.0](https://github.com/dgusakov/bimbimon-landing/compare/1.2.1...1.3.0) (2022-06-09)
 
 
