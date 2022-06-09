@@ -3,7 +3,7 @@ import React from "react";
 import HeaderBoldCenter from "./labels/HeaderBoldCenter";
 import ListButtonWithArrow from "./navs/ListButtonWithArrow";
 
-function Main() {
+function Buy() {
   return (
     <div className="container">
       <HeaderBoldCenter name="Купить наши книги" key="buy" />
@@ -31,4 +31,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Buy;

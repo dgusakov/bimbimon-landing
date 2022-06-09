@@ -9,6 +9,7 @@ import QuizMain from "./QuizMain";
 import NotFound from "./NotFound";
 import Question from "./Question";
 import Videos from "./Videos";
+import VideosRouter from "./VideosRouter";
 import Buy from "./Buy";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/" element={<Main />} />
             <Route path="/quiz" element={<QuizMain path="/quiz" />} />
             <Route path="/videos" element={<Videos />} />
+            <Route path="/videos/:id" element={<VideosRouter />} />
             <Route path="/buy" element={<Buy />} />
             <Route path="/quiz/:game" element={<Quiz path="/quiz" />} />
             <Route
