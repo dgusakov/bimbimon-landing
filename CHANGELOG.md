@@ -1,3 +1,13 @@
+# [1.3.0](https://github.com/dgusakov/bimbimon-landing/compare/1.2.1...1.3.0) (2022-06-09)
+
+
+### Features
+
+* Add videos and buy pages ([75b74fa](https://github.com/dgusakov/bimbimon-landing/commit/75b74faab5dea42cdf178faa99235874773d252f))
+* Add videos router ([b65ffea](https://github.com/dgusakov/bimbimon-landing/commit/b65ffea364fe84cd98190372bc28e4e69d403b88))
+
+
+
 ## [1.2.1](https://github.com/dgusakov/bimbimon-landing/compare/1.2.0...1.2.1) (2022-06-01)
 
 
