@@ -1,7 +1,7 @@
 export const videos = new Map<string, string>([
   // Human
   ["bones", "https://www.youtube.com/watch?v=6C_RWeZtCNg"],
-  ["mussels", "https://www.youtube.com/watch?v=tf6ZvSB4fE4"],
+  ["muscles", "https://www.youtube.com/watch?v=tf6ZvSB4fE4"],
   ["digestion", "https://www.youtube.com/watch?v=nmGXEESqSf4"],
   ["breath", "https://www.youtube.com/watch?v=Q6GI4w5eFb4"],
   ["brain", "https://www.youtube.com/watch?v=rvXSIojvpGs"],
