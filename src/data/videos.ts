@@ -6,6 +6,7 @@ export const videos = new Map<string, string>([
   ["breath", "https://www.youtube.com/watch?v=Q6GI4w5eFb4"],
   ["brain", "https://www.youtube.com/watch?v=rvXSIojvpGs"],
   ["birth", "https://www.youtube.com/watch?v=zn0obDwK8lM"],
+  ["heart", "https://youtu.be/xqo9sMQwhYQ"],
   // Cars
   ["move-and-brake", "https://www.youtube.com/watch?v=nAPooI-lEJY"],
   ["safety", "https://www.youtube.com/watch?v=mBjb8LwtDbg"],
