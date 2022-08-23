@@ -10,9 +10,10 @@ import { ReactComponent as VKLogo } from "../img/vk.svg";
 function Main() {
   return (
     <div className="container">
-      <HeaderBoldCenter name="Книги - настольные игры" key="games"/>
+      <HeaderBoldCenter name="Книги - игры" key="games"/>
       <div className="container mt-3 mb-3">
-        <ListButtonWithArrow displayName="Посмотреть все" link="/quiz" key="all" />
+        <ListButtonWithArrow displayName="Настольные игры" link="/quiz" key="all" />
+        <ListButtonWithArrow displayName="Интерактивные игры" link="/games" key="all" />
       </div>
       <HeaderBoldCenter name="Детские книги БимБиМон" key="social"/>
       <div className="container mt-3 mb-3">
