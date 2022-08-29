@@ -15,6 +15,10 @@ export const videos = new Map<string, string>([
   // Money
   ["money-history", "https://www.youtube.com/watch?v=0oTBx2lNr74"],
   ["family-budget", "https://www.youtube.com/watch?v=5Lbda1tyx4Y"],
+  // Time
+  ["week","https://youtu.be/eGaXH-LYJ5k"],
+  ["year","https://youtu.be/xkbfByKcxhY"],
+  ["understand-time","https://youtu.be/SOgTCHQm8us"]
 ]);
 
 export function getVideoLink(name: string) {
