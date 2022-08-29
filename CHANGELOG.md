@@ -1,3 +1,12 @@
+# [1.5.0](https://github.com/dgusakov/bimbimon-landing/compare/1.4.0...1.5.0) (2022-08-29)
+
+
+### Features
+
+* Add new videos links ([18a181c](https://github.com/dgusakov/bimbimon-landing/commit/18a181c0ed7ae47a437491aef224e7cfe24b8c84))
+
+
+
 # [1.4.0](https://github.com/dgusakov/bimbimon-landing/compare/1.3.2...1.4.0) (2022-08-23)
 
 
