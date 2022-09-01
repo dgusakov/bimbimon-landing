@@ -6,6 +6,8 @@ import Footer from "./Footer";
 import Main from "./Main";
 import Quiz from "./Quiz";
 import QuizMain from "./QuizMain";
+import Game from "./Game";
+import GamesMain from "./GamesMain";
 import NotFound from "./NotFound";
 import Question from "./Question";
 import Videos from "./Videos";
@@ -21,14 +23,16 @@ function App() {
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/quiz" element={<QuizMain path="/quiz" />} />
-            <Route path="/videos" element={<Videos />} />
-            <Route path="/videos/:id" element={<VideosRouter />} />
-            <Route path="/buy" element={<Buy />} />
             <Route path="/quiz/:game" element={<Quiz path="/quiz" />} />
             <Route
               path="/quiz/:game/:topic"
               element={<Question path="/quiz" />}
             />
+            <Route path="/games" element={<GamesMain path="/games" />} />
+            <Route path="/games/:game" element={<Game path="/games" />} />
+            <Route path="/videos" element={<Videos />} />
+            <Route path="/videos/:id" element={<VideosRouter />} />
+            <Route path="/buy" element={<Buy />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
