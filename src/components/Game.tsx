@@ -20,6 +20,13 @@ function Game(props: any) {
         <div className="container mb-4">
         {game.content.map((topic: ITopic) => <TextWithHeader name={topic.title} body={topic.body}/>)}
         </div>
+        <div className="container mb-4">
+          <HeaderLight name="Интерактивная игра" />
+          <HeaderLight name={'"' + game.displayName1 + '"'} />
+        </div>
+        <div className="container mb-4">
+        {game.content1.map((topic: ITopic) => <TextWithHeader name={topic.title} body={topic.body}/>)}
+        </div>
       </div>
     );
   } catch (error) {

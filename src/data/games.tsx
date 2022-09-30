@@ -3,7 +3,10 @@ import { ReactElement } from "react";
 export interface IGame {
   name: string;
   displayName: string;
+  name1: string;
+  displayName1: string;
   content: ITopic[];
+  content1: ITopic[];
 }
 
 export interface ITopic {
@@ -125,6 +128,18 @@ export const GAMES: IGame[] = [
             Карточки с эмоциями раскладываются картинкой вверх. Ребёнок берет
             любую карточку. Теперь нужно найти карточки с похожими эмоциями и с
             эмоциями, противоположными по ощущениям. Объяснить свой выбор.
+          </div>
+        ),
+      },
+    ],
+    name1: "puzzles",
+    displayName1: "Пазл",
+    content1: [
+      {
+        title: "Собери пазл",
+        body: (
+          <div>
+            Тут будет лежать игра по книге про крипту
           </div>
         ),
       },
