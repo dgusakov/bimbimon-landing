@@ -18,7 +18,7 @@ function BlockchainChild(props: any) {
       console.log(newClicked);
       console.log(props.seq);
       if (newClicked.length >= 4) {
-        if (newClicked == props.seq) {
+        if (newClicked === props.seq) {
           youWin();
         } else {
           youLoose();
@@ -37,38 +37,40 @@ function BlockchainChild(props: any) {
   return (
     <div className="container">
       <div
-        className="container block-grid justify-content-center mb-2"
+        className="container"
         style={{ display: !win && !loss ? "block" : "none" }}
       >
         <HeaderBoldCenter name="Click on blocks in the correct order" />
-        <Block
-          className="tile-red block m-2"
-          id="1"
-          onClick={updateLastClicked("1")}
-          group={props.group}
-          activated={isActivated("1")}
-        />
-        <Block
-          className="tile tile-green block m-2"
-          id="2"
-          onClick={updateLastClicked("2")}
-          group={props.group}
-          activated={isActivated("2")}
-        />
-        <Block
-          className="tile tile-blue block m-2"
-          id="3"
-          onClick={updateLastClicked("3")}
-          group={props.group}
-          activated={isActivated("3")}
-        />
-        <Block
-          className="tile tile-yellow block m-2"
-          id="4"
-          onClick={updateLastClicked("4")}
-          group={props.group}
-          activated={isActivated("4")}
-        />
+        <div className="container block-grid justify-content-center mb-2">
+          <Block
+            className="tile-red block m-2"
+            id="1"
+            onClick={updateLastClicked("1")}
+            group={props.group}
+            activated={isActivated("1")}
+          />
+          <Block
+            className="tile tile-green block m-2"
+            id="2"
+            onClick={updateLastClicked("2")}
+            group={props.group}
+            activated={isActivated("2")}
+          />
+          <Block
+            className="tile tile-blue block m-2"
+            id="3"
+            onClick={updateLastClicked("3")}
+            group={props.group}
+            activated={isActivated("3")}
+          />
+          <Block
+            className="tile tile-yellow block m-2"
+            id="4"
+            onClick={updateLastClicked("4")}
+            group={props.group}
+            activated={isActivated("4")}
+          />
+        </div>
       </div>
       <div className="container" style={{ display: win ? "block" : "none" }}>
         <HeaderBoldCenter name="Correct!" />
