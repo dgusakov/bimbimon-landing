@@ -1,3 +1,17 @@
+# [1.6.0](https://github.com/dgusakov/bimbimon-landing/compare/1.5.0...1.6.0) (2022-10-10)
+
+
+### Bug Fixes
+
+* Crypto game ([#39](https://github.com/dgusakov/bimbimon-landing/issues/39)) ([aa8a8dc](https://github.com/dgusakov/bimbimon-landing/commit/aa8a8dc8b1bf88afb805e776421c12cdf2d71966))
+
+
+### Features
+
+* Blockchain game ([#38](https://github.com/dgusakov/bimbimon-landing/issues/38)) ([d30b463](https://github.com/dgusakov/bimbimon-landing/commit/d30b463854fcc1a5d184cfabca9c05d5fc524544))
+
+
+
 # [1.5.0](https://github.com/dgusakov/bimbimon-landing/compare/1.4.0...1.5.0) (2022-08-29)
 
 
