@@ -13,6 +13,7 @@ import Question from "./Question";
 import Videos from "./Videos";
 import VideosRouter from "./VideosRouter";
 import Buy from "./Buy";
+import Blockchain from "./blockchain/Blockchain";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               element={<Question path="/quiz" />}
             />
             <Route path="/games" element={<GamesMain path="/games" />} />
+            <Route path="/games/crypto" element={<Blockchain path="/games" />} />
             <Route path="/games/:game" element={<Game path="/games" />} />
             <Route path="/videos" element={<Videos />} />
             <Route path="/videos/:id" element={<VideosRouter />} />
