@@ -36,6 +36,7 @@ function App() {
             <Route path="/videos/:id" element={<VideosRouter />} />
             <Route path="/buy" element={<Buy />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/blockchain" element={<Blockchain />} />
           </Routes>
         </main>
         <Footer />

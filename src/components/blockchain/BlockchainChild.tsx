@@ -11,28 +11,37 @@ function BlockchainChild(props: any) {
   const [loss, setLoss] = React.useState(false);
   const youLoose = () => setLoss(true);
   const [clicked, setClicked] = React.useState("");
+  const doubleTap = (index: string) => {
+    return () => {
+      const lastClicked = clicked.replace(index, "");
+      setClicked(lastClicked);
+   };
+  };
+  const isActivated = (index: string) => {
+    return clicked.includes(index);
+  };
   const updateLastClicked = (index: string) => {
     return () => {
       const newClicked = clicked + index;
       setClicked(newClicked);
+      if (index === clicked.slice(-1) || index === clicked) {
+        doubleTap(index);
+      };
       console.log(newClicked);
       console.log(props.seq);
-      if (newClicked.length >= 4) {
-        if (newClicked === props.seq) {
-          youWin();
-        } else {
-          youLoose();
+        if (newClicked.length >= 4) {
+          if (newClicked === props.seq) {
+            youWin();
+          } else {
+           youLoose();
+          }
         }
-      }
     };
   };
   const resetStates = () => {
     setWin(false);
     setLoss(false);
     setClicked("");
-  };
-  const isActivated = (index: string) => {
-    return clicked.includes(index);
   };
   return (
     <div className="container">
