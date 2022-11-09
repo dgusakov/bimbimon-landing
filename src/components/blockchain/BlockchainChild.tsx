@@ -3,7 +3,8 @@ import "../../css/Blockchain.css";
 import React from "react";
 import Block from "./Block";
 import HeaderBoldCenter from "../labels/HeaderBoldCenter";
-import { refreshPage } from "../../heplers/index";
+import { getRandomInt, refreshPage } from "../../heplers/index";
+import { Button } from "react-bootstrap/lib/InputGroup";
 
 function BlockchainChild(props: any) {
   const [win, setWin] = React.useState(false);
@@ -20,6 +21,13 @@ function BlockchainChild(props: any) {
   const isActivated = (index: string) => {
     return clicked.includes(index);
   };
+  const hintButton = () => {
+    return () => {
+      <div>
+        <HeaderBoldCenter The next block is number  />
+      </div>
+    }
+  }
   const updateLastClicked = (index: string) => {
     return () => {
       const newClicked = clicked + index;
@@ -56,32 +64,44 @@ function BlockchainChild(props: any) {
             id="1"
             onClick={updateLastClicked("1")}
             group={props.group}
-            activated={isActivated("1")}
-          />
+            activated={isActivated("1")} />
           <Block
             className="tile tile-green block m-2"
             id="2"
             onClick={updateLastClicked("2")}
             group={props.group}
-            activated={isActivated("2")}
-          />
+            activated={isActivated("2")} />
           <Block
             className="tile tile-blue block m-2"
             id="3"
             onClick={updateLastClicked("3")}
             group={props.group}
-            activated={isActivated("3")}
-          />
+            activated={isActivated("3")} />
           <Block
             className="tile tile-yellow block m-2"
             id="4"
             onClick={updateLastClicked("4")}
             group={props.group}
-            activated={isActivated("4")}
-          />
-        </div>
+            activated={isActivated("4")} />
       </div>
-      <div className="container" style={{ display: win ? "block" : "none" }}>
+      </div><div className="conatiner block-grid justify-content-center mb-2" >
+      <button
+            id="showAnswer"
+            className="btn btn-scd"
+            type="button"
+            onClick={hintButton}
+          
+        >
+          Take a hint
+      </button>
+      <button
+      className="btn btn-main"
+      type="button"
+      onClick={refreshPage}
+      >
+        Start over
+      </button>
+    </div><div className="container" style={{ display: win ? "block" : "none" }}>
         <HeaderBoldCenter name="Correct!" />
         <div className="container block-grid justify-content-center mb-2">
           <Block className="block-line m-2" id="5" group={props.group} />
@@ -96,8 +116,7 @@ function BlockchainChild(props: any) {
             New game
           </button>
         </div>
-      </div>
-      <div className="container" style={{ display: loss ? "block" : "none" }}>
+      </div><div className="container" style={{ display: loss ? "block" : "none" }}>
         <HeaderBoldCenter name="Oops! Wrong block order..." />
         <div className="d-grid gap-2 mb-2 mt-4">
           <button
@@ -109,7 +128,7 @@ function BlockchainChild(props: any) {
             Try again
           </button>
         </div>
-      </div>
+    </div>
     </div>
   );
 }
