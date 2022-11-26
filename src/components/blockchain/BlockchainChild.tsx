@@ -21,12 +21,12 @@ function BlockchainChild(props: any) {
   const isActivated = (index: string) => {
     return clicked.includes(index);
   };
-  const hintButton = () => {
-    return () => {
-      <div>
-        <HeaderBoldCenter The next block is number  />
+  function hintButton(): JSX.Element {
+    return (
+      <div className="container" style={{ display: !win && !loss ? "block" : "none" }}>
+        <HeaderBoldCenter name="The next block is" />
       </div>
-    }
+    );
   }
   const updateLastClicked = (index: string) => {
     return () => {
@@ -85,22 +85,23 @@ function BlockchainChild(props: any) {
             activated={isActivated("4")} />
       </div>
       </div><div className="conatiner block-grid justify-content-center mb-2" >
+      <div className="button-1" style={{ display: !win && !loss ? "block" : "none" }}>
       <button
             id="showAnswer"
             className="btn btn-scd"
             type="button"
-            onClick={hintButton}
-          
+            onClick={() => hintButton()}
         >
           Take a hint
       </button>
+      </div><div className="button-2" style={{ display: !win && !loss ? "block" : "none" }}>
       <button
-      className="btn btn-main"
+      className="btn btn-scd"
       type="button"
       onClick={refreshPage}
       >
         Start over
-      </button>
+      </button></div>
     </div><div className="container" style={{ display: win ? "block" : "none" }}>
         <HeaderBoldCenter name="Correct!" />
         <div className="container block-grid justify-content-center mb-2">
