@@ -3,8 +3,8 @@ import "../../css/Blockchain.css";
 import React from "react";
 import Block from "./Block";
 import HeaderBoldCenter from "../labels/HeaderBoldCenter";
-import { getRandomInt, refreshPage } from "../../heplers/index";
-import { Button } from "react-bootstrap/lib/InputGroup";
+import { refreshPage } from "../../heplers/index";
+
 
 function BlockchainChild(props: any) {
   const [win, setWin] = React.useState(false);
@@ -12,29 +12,18 @@ function BlockchainChild(props: any) {
   const [loss, setLoss] = React.useState(false);
   const youLoose = () => setLoss(true);
   const [clicked, setClicked] = React.useState("");
-  const doubleTap = (index: string) => {
-    return () => {
-      const lastClicked = clicked.replace(index, "");
-      setClicked(lastClicked);
-   };
-  };
+  const [hint, setHint] = React.useState(false);
+  //const doubleTap = (index: string) => {
+      //const lastClicked = clicked.replace(index, "");
+      //setClicked(lastClicked);
+  //};
   const isActivated = (index: string) => {
     return clicked.includes(index);
   };
-  function hintButton(): JSX.Element {
-    return (
-      <div className="container" style={{ display: !win && !loss ? "block" : "none" }}>
-        <HeaderBoldCenter name="The next block is" />
-      </div>
-    );
-  }
   const updateLastClicked = (index: string) => {
     return () => {
       const newClicked = clicked + index;
       setClicked(newClicked);
-      if (index === clicked.slice(-1) || index === clicked) {
-        doubleTap(index);
-      };
       console.log(newClicked);
       console.log(props.seq);
         if (newClicked.length >= 4) {
@@ -43,7 +32,12 @@ function BlockchainChild(props: any) {
           } else {
            youLoose();
           }
-        }
+        } //else {
+          //if (index === clicked.slice(-1) || index === clicked) {
+           // doubleTap(index);
+            //clicked.includes(index);
+          //};
+        //}
     };
   };
   const resetStates = () => {
@@ -85,15 +79,17 @@ function BlockchainChild(props: any) {
             activated={isActivated("4")} />
       </div>
       </div><div className="conatiner block-grid justify-content-center mb-2" >
+      
       <div className="button-1" style={{ display: !win && !loss ? "block" : "none" }}>
       <button
             id="showAnswer"
             className="btn btn-scd"
             type="button"
-            onClick={() => hintButton()}
+            onClick={() => setHint( prev => !prev)}
         >
-          Take a hint
+          { hint ? 'Hide hint' : 'Take a hint'}
       </button>
+      
       </div><div className="button-2" style={{ display: !win && !loss ? "block" : "none" }}>
       <button
       className="btn btn-scd"
@@ -102,6 +98,11 @@ function BlockchainChild(props: any) {
       >
         Start over
       </button></div>
+      
+      {hint && <div className="container" style={{ display: !win && !loss ? "block" : "none" }}>
+          <HeaderBoldCenter name={`The correct order is ${ props.seq }`}/>
+        </div>}
+   
     </div><div className="container" style={{ display: win ? "block" : "none" }}>
         <HeaderBoldCenter name="Correct!" />
         <div className="container block-grid justify-content-center mb-2">
