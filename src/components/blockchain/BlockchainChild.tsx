@@ -1,22 +1,18 @@
 import "../../css/App.css";
 import "../../css/Blockchain.css";
-import React from "react";
+import { useState } from "react";
 import Block from "./Block";
 import HeaderBoldCenter from "../labels/HeaderBoldCenter";
 import { refreshPage } from "../../heplers/index";
 
 
 function BlockchainChild(props: any) {
-  const [win, setWin] = React.useState(false);
+  const [win, setWin] = useState(false);
   const youWin = () => setWin(true);
-  const [loss, setLoss] = React.useState(false);
+  const [loss, setLoss] = useState(false);
   const youLoose = () => setLoss(true);
-  const [clicked, setClicked] = React.useState("");
-  const [hint, setHint] = React.useState(false);
-  //const doubleTap = (index: string) => {
-      //const lastClicked = clicked.replace(index, "");
-      //setClicked(lastClicked);
-  //};
+  const [clicked, setClicked] = useState("");
+  const [hint, setHint] = useState(false);
   const isActivated = (index: string) => {
     return clicked.includes(index);
   };
@@ -32,12 +28,7 @@ function BlockchainChild(props: any) {
           } else {
            youLoose();
           }
-        } //else {
-          //if (index === clicked.slice(-1) || index === clicked) {
-           // doubleTap(index);
-            //clicked.includes(index);
-          //};
-        //}
+        } 
     };
   };
   const resetStates = () => {

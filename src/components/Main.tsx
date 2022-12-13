@@ -14,7 +14,6 @@ function Main() {
       <div className="container mt-3 mb-3">
         <ListButtonWithArrow displayName="Настольные игры" link="/quiz" key="all" />
         <ListButtonWithArrow displayName="Интерактивные игры" link="/games" key="all" />
-        <ListButtonWithArrow displayName="Blockchain" link="/blockchain" key="all" />
       </div>
       <HeaderBoldCenter name="Детские книги БимБиМон" key="social"/>
       <div className="container mt-3 mb-3">
