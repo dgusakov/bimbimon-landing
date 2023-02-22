@@ -1,3 +1,17 @@
+# [1.7.0](https://github.com/dgusakov/bimbimon-landing/compare/1.6.0...1.7.0) (2023-02-22)
+
+
+### Bug Fixes
+
+* Add missing files ([c1ac50f](https://github.com/dgusakov/bimbimon-landing/commit/c1ac50fce7516baa499ef7db19c2813394494962))
+
+
+### Features
+
+* Puss in boots book ([fbcef5e](https://github.com/dgusakov/bimbimon-landing/commit/fbcef5edfd36226c8074a9ad5a229b95b95e9e9d))
+
+
+
 # [1.6.0](https://github.com/dgusakov/bimbimon-landing/compare/1.5.0...1.6.0) (2022-10-10)
 
 
@@ -81,10 +95,6 @@
 
 
 # [1.1.0](https://github.com/dgusakov/bimbimon-landing/compare/1.0.0...1.1.0) (2022-03-17)
-
-
-
-# 1.0.0 (2022-03-09)
 
 
 
