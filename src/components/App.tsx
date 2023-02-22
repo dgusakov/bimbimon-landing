@@ -12,6 +12,7 @@ import NotFound from "./NotFound";
 import Question from "./Question";
 import Videos from "./Videos";
 import VideosRouter from "./VideosRouter";
+import BooksRouter from "./BooksRouter";
 import Buy from "./Buy";
 import Blockchain from "./blockchain/Blockchain";
 
@@ -30,10 +31,14 @@ function App() {
               element={<Question path="/quiz" />}
             />
             <Route path="/games" element={<GamesMain path="/games" />} />
-            <Route path="/games/crypto" element={<Blockchain path="/games" />} />
+            <Route
+              path="/games/crypto"
+              element={<Blockchain path="/games" />}
+            />
             <Route path="/games/:game" element={<Game path="/games" />} />
             <Route path="/videos" element={<Videos />} />
             <Route path="/videos/:id" element={<VideosRouter />} />
+            <Route path="/books/:id" element={<BooksRouter />} />
             <Route path="/buy" element={<Buy />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
