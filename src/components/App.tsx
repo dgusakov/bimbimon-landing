@@ -13,6 +13,7 @@ import Question from "./Question";
 import Videos from "./Videos";
 import VideosRouter from "./VideosRouter";
 import BooksRouter from "./BooksRouter";
+import LinksRouter from "./FilesRouter";
 import Buy from "./Buy";
 import Blockchain from "./blockchain/Blockchain";
 
@@ -40,6 +41,7 @@ function App() {
             <Route path="/videos/:id" element={<VideosRouter />} />
             <Route path="/books/:id" element={<BooksRouter />} />
             <Route path="/buy" element={<Buy />} />
+            <Route path="/download/:id" element={<LinksRouter />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
