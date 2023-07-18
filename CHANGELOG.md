@@ -1,3 +1,26 @@
+# [1.8.0](https://github.com/dgusakov/bimbimon-landing/compare/1.7.0...1.8.0) (2023-03-31)
+
+
+### Features
+
+* Add link to the template ([ce98500](https://github.com/dgusakov/bimbimon-landing/commit/ce98500f405f08edf1ca69bb848a7741b2d5a11a))
+
+
+
+# [1.7.0](https://github.com/dgusakov/bimbimon-landing/compare/1.6.0...1.7.0) (2023-02-22)
+
+
+### Bug Fixes
+
+* Add missing files ([c1ac50f](https://github.com/dgusakov/bimbimon-landing/commit/c1ac50fce7516baa499ef7db19c2813394494962))
+
+
+### Features
+
+* Puss in boots book ([fbcef5e](https://github.com/dgusakov/bimbimon-landing/commit/fbcef5edfd36226c8074a9ad5a229b95b95e9e9d))
+
+
+
 # [1.6.0](https://github.com/dgusakov/bimbimon-landing/compare/1.5.0...1.6.0) (2022-10-10)
 
 
@@ -77,14 +100,6 @@
 
 * Add CHANGELOG.md ([ce5c049](https://github.com/dgusakov/bimbimon-landing/commit/ce5c04953f5f555c69a03874260a19bc755b6ae6))
 * New release flow ([8ca22e5](https://github.com/dgusakov/bimbimon-landing/commit/8ca22e5d37114307cea359b53c6c6383e9088679))
-
-
-
-# [1.1.0](https://github.com/dgusakov/bimbimon-landing/compare/1.0.0...1.1.0) (2022-03-17)
-
-
-
-# 1.0.0 (2022-03-09)
 
 
 
