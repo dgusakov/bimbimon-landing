@@ -8,10 +8,12 @@ import HeaderLight from "./labels/HeaderLight";
 import Answer from "./functional/Answer";
 import NotFound from "./NotFound";
 
+// Function to generate a random integer between 0 and max (exclusive)
 function getRandomInt(max: number): number {
   return Math.floor(Math.random() * max);
 }
 
+// Function to shuffle an array randomly
 function shuffleArray(array: any[]): any[] {
   const shuffledArray = [...array];
   for (let i = shuffledArray.length - 1; i > 0; i--) {
@@ -20,12 +22,17 @@ function shuffleArray(array: any[]): any[] {
   }
   return shuffledArray;
 }
+
 function Question(props: any) {
+  // Get the URL parameters
   let urlParams = useParams();
+
+  // State variables
   const [questions, setQuestions] = useState<any[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
   const [allQuestionsShown, setAllQuestionsShown] = useState<boolean>(false);
 
+  // Load the questions for the current topic on component mount and when topic changes
   useEffect(() => {
     const topic = getGameTopic(urlParams.game, urlParams.topic);
     const shuffledQuestions = shuffleArray(topic.questions);
@@ -34,10 +41,13 @@ function Question(props: any) {
     setAllQuestionsShown(false);
   }, [urlParams.game, urlParams.topic]);
 
+  // Function to handle the "Next Question" button click
   const showNextQuestion = () => {
     if (currentQuestionIndex < questions.length - 1) {
+      // If there are more questions, show the next one
       setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
     } else {
+      // If all questions have been shown, disable the button
       setAllQuestionsShown(true);
     }
   };
@@ -45,6 +55,7 @@ function Question(props: any) {
   try {
     const topic = getGameTopic(urlParams.game, urlParams.topic);
 
+    // Check if there are no questions to show
     if (questions.length === 0) {
       return (
         <div>
@@ -82,6 +93,7 @@ function Question(props: any) {
           <Answer>{currentQuestion.answer}</Answer>
           <div className="d-grid gap-2 mb-4">
             {allQuestionsShown ? (
+              // If all questions have been shown, disable the button
               <button
                 id="switchQuestion"
                 className="btn btn-scd"
@@ -91,6 +103,7 @@ function Question(props: any) {
                 Все вопросы из этой темы уже показаны
               </button>
             ) : (
+              // Show the "Next Question" button
               <button
                 id="switchQuestion"
                 className="btn btn-scd"
@@ -111,4 +124,3 @@ function Question(props: any) {
 }
 
 export default Question;
-estion;
