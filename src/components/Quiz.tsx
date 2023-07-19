@@ -1,6 +1,6 @@
 import "../css//App.css";
-import { getGame } from "../data/questions";
-import React from "react";
+import { getGame, getGameTopic } from "../data/questions";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ListButtonWithArrow from "./navs/ListButtonWithArrow";
 import HeaderBold from "./labels/HeaderBold";
@@ -10,8 +10,10 @@ import NotFound from "./NotFound";
 function Quiz(props: any) {
   let path = props.path ? props.path : ".";
   let urlParams = useParams();
+
   try {
     const game = getGame(urlParams.game);
+
     return (
       <div>
         <div className="container mb-4">
@@ -24,6 +26,7 @@ function Quiz(props: any) {
               displayName={el.displayName}
               link={path + "/" + urlParams.game + "/" + el.name}
               key={index}
+              //onClick={showNextQuestion}
             />
           ))}
         </div>
