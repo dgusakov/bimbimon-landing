@@ -7,6 +7,7 @@ import HeaderBold from "./labels/HeaderBold";
 import HeaderLight from "./labels/HeaderLight";
 import Answer from "./functional/Answer";
 import NotFound from "./NotFound";
+import { refreshPage } from "../heplers";
 
 // Function to generate a random integer between 0 and max (exclusive)
 function getRandomInt(max: number): number {
@@ -94,14 +95,24 @@ function Question(props: any) {
           <div className="d-grid gap-2 mb-4">
             {allQuestionsShown ? (
               // If all questions have been shown, disable the button
+              <div>
               <button
                 id="switchQuestion"
-                className="btn btn-scd"
+                className="btn btn-scd btn-block"
                 type="button"
                 disabled
               >
                 Все вопросы из этой темы уже показаны
               </button>
+              <button
+              id="restartQuiz"
+              className="btn btn-scd btn-block"
+              type="button"
+              onClick={refreshPage}
+            >
+              Начать заново
+            </button>
+            </div>
             ) : (
               // Show the "Next Question" button
               <button

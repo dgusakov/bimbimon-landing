@@ -159,3 +159,9 @@ html {
 .no-wrap {
   white-space: nowrap;
 }
+
+.btn-block {
+  width: 100%; 
+  margin-top: 10px; 
+  
+}
