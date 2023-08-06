@@ -19,7 +19,7 @@ function QuizMain(props: any) {
           // Display a button with an arrow for each game from the Questions array
           <ListButtonWithArrow displayName={el.displayName} link={path + "/"+ el.name} key={index} />
         ))}
-        <ListItem displayName="<Больше книг-игр уже скоро>!" />
+        <ListItem displayName="Больше книг-игр уже скоро!" />
       </div>
     </div>
   );
