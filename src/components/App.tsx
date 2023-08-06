@@ -43,7 +43,6 @@ function App() {
             <Route path="/buy" element={<Buy />} />
             <Route path="/download/:id" element={<LinksRouter />} />
             <Route path="*" element={<NotFound />} />
-            <Route path="/blockchain" element={<Blockchain />} />
           </Routes>
         </main>
         <Footer />
