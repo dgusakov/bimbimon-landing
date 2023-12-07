@@ -18,7 +18,7 @@ function getRandomInt(max: number): number {
 function shuffleArray(array: any[]): any[] {
   const shuffledArray = [...array];
   for (let i = shuffledArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+    const j = getRandomInt(i + 1);
     [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
   }
   return shuffledArray;
@@ -69,7 +69,7 @@ function Question(props: any) {
             <HeaderBold name={topic.displayName} />
             <HeaderLight name="Вопрос" />
             <div className="mt-3" id="question">
-              <div id="questionBody">Все вопросы из этой темы уже показаны.</div>
+              <div id="questionBody"> Вопросов по теме не найдено </div>
             </div>
           </div>
         </div>
@@ -96,14 +96,6 @@ function Question(props: any) {
             {allQuestionsShown ? (
               // If all questions have been shown, disable the button
               <div>
-              <button
-                id="switchQuestion"
-                className="btn btn-scd btn-block"
-                type="button"
-                disabled
-              >
-                Все вопросы из этой темы уже показаны
-              </button>
               <button
               id="restartQuiz"
               className="btn btn-scd btn-block"

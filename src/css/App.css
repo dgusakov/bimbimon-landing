@@ -128,16 +128,10 @@ html {
   color: #000000;
 }
 
-.button-1 {
+.btn-for-startOver-and-hint {
   display:block;
   margin: 20px;
   margin-left: 10px;
-}
-
-.button-2 {
-  display:block;
-  margin: 20px;
-  margin-right: 10px;
 }
 
 .Error-img {

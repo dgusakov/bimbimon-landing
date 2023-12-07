@@ -98,7 +98,7 @@ function BlockchainChild(props: any) {
       
       <div className="conatiner block-grid justify-content-center mb-2" >
         {/* Show the "Take a hint" button */}
-        <div className="button-1" style={{ display: !win && !loss ? "block" : "none" }}>
+        <div className="btn-for-startOver-and-hint" style={{ display: !win && !loss ? "block" : "none" }}>
           <button
             id="showAnswer"
             className="btn btn-scd"
@@ -109,7 +109,7 @@ function BlockchainChild(props: any) {
           </button>
         </div>
         {/* Show the "Start over" button */}
-        <div className="button-2" style={{ display: !win && !loss ? "block" : "none" }}>
+        <div className="btn-for-startOver-and-hint" style={{ display: !win && !loss ? "block" : "none" }}>
           <button
             className="btn btn-scd"
             type="button"
