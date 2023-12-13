@@ -1,4 +1,27 @@
-# Getting Started with Create React App
+# Bimbimon landing page 👾
+
+Bimbimon landing - open-sourse web2 app for children's book publishing house
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/dgusakov/bimbimon-landing/update-readme/src/img/main-page-demo.png">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/dgusakov/bimbimon-landing/update-readme/src/img/blockchain-game-demo.gif">
+</p>
+
+# Issues 🚨
+
+If you've found an issue or a bug, you can report it in the issues section of this repository. Please try to follow these simple guidelines to report your issue:
+
+- Issue definition
+- Expected behaviour
+- Actual behaviour
+- Steps to reproduce
+- Already tried fixes (if relevant)
+
+
+# Getting Started with Bimbimon app 🚀
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
