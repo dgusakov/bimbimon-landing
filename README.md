@@ -3,11 +3,11 @@
 Bimbimon landing - open-sourse web2 app for children's book publishing house
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/dgusakov/bimbimon-landing/update-readme/src/img/main-page-demo.png">
+  <img src="https://raw.githubusercontent.com/dgusakov/bimbimon-landing/main/src/img/main-page-demo.png">
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/dgusakov/bimbimon-landing/update-readme/src/img/blockchain-game-demo.gif">
+  <img src="https://raw.githubusercontent.com/dgusakov/bimbimon-landing/main/src/img/blockchain-game-demo.gif">
 </p>
 
 # Issues 🚨
