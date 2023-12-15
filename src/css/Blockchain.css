@@ -1,20 +1,36 @@
-.block {
-  max-width: 40vw;
-  width: 150px;
-}
-
 .block-line {
-  max-width: 200vw;
-  width: 500px;
+  max-width: 400vw;
+  width: 1000px;
 }
 
 .block-grid {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .inactive {
-    pointer-events: none;
+  pointer-events: none;
+}
+
+.block {
+  max-width: 40vw;
+  width: 140px;
+  transition: transform 0.3s;
+  margin: 2px;
+}
+
+.block-icon {
+  max-width: 40vw;
+  width: 140px;
+  transition: transform 0.3s;
+}
+
+.block-icon.activated {
+  transform: translateY(10px) scale(0.8);
+}
+
+.block:active {
+  transform: translateY(10px) scale(0.8);
 }
 
 .tile-red {
@@ -24,7 +40,7 @@
     0 8px 8px 1px rgba(0, 0, 0, 0.5);
   transition: 0.15s;
 }
-
+/*
 .tile-red:hover,
 .tile-red:focus {
   background-color: #ff451a;
@@ -39,8 +55,9 @@
     0 0 0 1px rgba(0, 0, 0, 0.4);
   background-color: #ff5c36;
   transform: translateY(10px);
+  transform: scale(0.8);
 }
-
+*/
 .tile-green {
   background-color: #7fba00;
   box-shadow: 0 0 0 1px #7fba00 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
@@ -48,7 +65,7 @@
     0 8px 8px 1px rgba(0, 0, 0, 0.5);
   transition: 0.15s;
 }
-
+/*
 .tile-green:hover,
 .tile-green:focus {
   background-color: #8cc218;
@@ -63,8 +80,9 @@
     0 0 0 1px rgba(0, 0, 0, 0.4);
   background-color: #a0ea00;
   transform: translateY(10px);
+  transform: scale(0.8);
 }
-
+*/
 .tile-yellow {
   background-color: #ffb900;
   box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
@@ -72,7 +90,7 @@
     0 8px 8px 1px rgba(0, 0, 0, 0.5);
   transition: 0.15s;
 }
-
+/*
 .tile-yellow:hover,
 .tile-yellow:focus {
   background-color: #ffb900;
@@ -87,8 +105,9 @@
     0 0 0 1px rgba(0, 0, 0, 0.4);
   background-color: #ffca3d;
   transform: translateY(10px);
+  transform: scale(0.8);
 }
-
+*/
 .tile-blue {
   background-color: #00a4ef;
   box-shadow: 0 0 0 1px #00a4ef inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
@@ -96,7 +115,7 @@
     0 8px 8px 1px rgba(0, 0, 0, 0.5);
   transition: 0.15s;
 }
-
+/*
 .tile-blue:hover,
 .tile-blue:focus {
   background-color: #139ddd;
@@ -111,4 +130,26 @@
     0 0 0 1px rgba(0, 0, 0, 0.4);
   background-color: #2bbcff;
   transform: translateY(10px);
+  transform: scale(0.8);
+}
+*/
+.big-block {
+  max-width: 40vw;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-block-wrapper {
+  width: 700px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-block-icon {
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
 }

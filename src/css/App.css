@@ -128,6 +128,12 @@ html {
   color: #000000;
 }
 
+.btn-for-startOver-and-hint {
+  display:block;
+  margin: 20px;
+  margin-left: 10px;
+}
+
 .Error-img {
   max-width: 70vw;
 }
@@ -146,4 +152,10 @@ html {
 
 .no-wrap {
   white-space: nowrap;
+}
+
+.btn-block {
+  width: 100%; 
+  margin-top: 10px; 
+  
 }
