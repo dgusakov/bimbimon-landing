@@ -1,6 +1,5 @@
 import "../css//App.css";
-import { getGame, getGameTopic } from "../data/questions";
-import React, { useEffect, useState } from "react";
+import { getGame } from "../data/questions";
 import { useParams } from "react-router-dom";
 import ListButtonWithArrow from "./navs/ListButtonWithArrow";
 import HeaderBold from "./labels/HeaderBold";
@@ -32,7 +31,7 @@ function Quiz(props: any) {
               displayName={el.displayName}
               link={path + "/" + urlParams.game + "/" + el.name}
               key={index}
-              // onClick={showNextQuestion} // This line seems to be commented out, so it's not used here
+              // onClick={showNextQuestion}
             />
           ))}
         </div>
