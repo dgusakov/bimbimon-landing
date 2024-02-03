@@ -5,6 +5,7 @@ import Block from "./Block";
 import HeaderBoldCenter from "../labels/HeaderBoldCenter";
 import { refreshPage } from "../../heplers/index";
 import { BigBlock } from "./Block";
+import confetti from 'canvas-confetti';
 
 // BlockchainChild component
 function BlockchainChild(props: any) {
@@ -42,6 +43,7 @@ function BlockchainChild(props: any) {
         if (newClicked.length >= 4) {
           if (newClicked === props.seq) {
             youWin();
+            confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 }});
           } else {
             youLoose();
           }
