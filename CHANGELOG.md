@@ -1,3 +1,18 @@
+# [1.10.0](https://github.com/dgusakov/bimbimon-landing/compare/1.9.0...1.10.0) (2024-02-19)
+
+
+### Bug Fixes
+
+* update caniuse-lite ([#63](https://github.com/dgusakov/bimbimon-landing/issues/63)) ([b7b1054](https://github.com/dgusakov/bimbimon-landing/commit/b7b10549f981419d1ff8a0d4315a19dcfb5a5d88))
+
+
+### Features
+
+* add animation for solved puzzle ([#67](https://github.com/dgusakov/bimbimon-landing/issues/67)) ([30fdf87](https://github.com/dgusakov/bimbimon-landing/commit/30fdf877b43ddff27069a9abe483b56a81704c91))
+* Update README.md to fit the project  ([#60](https://github.com/dgusakov/bimbimon-landing/issues/60)) ([c68731b](https://github.com/dgusakov/bimbimon-landing/commit/c68731b481f09498bd06df9a9a0cf8e7b7f7facf))
+
+
+
 # [1.9.0](https://github.com/dgusakov/bimbimon-landing/compare/1.8.0...1.9.0) (2023-09-27)
 
 
@@ -82,15 +97,6 @@
 
 * Add videos and buy pages ([75b74fa](https://github.com/dgusakov/bimbimon-landing/commit/75b74faab5dea42cdf178faa99235874773d252f))
 * Add videos router ([b65ffea](https://github.com/dgusakov/bimbimon-landing/commit/b65ffea364fe84cd98190372bc28e4e69d403b88))
-
-
-
-## [1.2.1](https://github.com/dgusakov/bimbimon-landing/compare/1.2.0...1.2.1) (2022-06-01)
-
-
-### Bug Fixes
-
-* Use node 16.x for build ([80588ee](https://github.com/dgusakov/bimbimon-landing/commit/80588eed78fd30f670b6751004b8df84a65946b5))
 
 
 
