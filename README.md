@@ -7,7 +7,7 @@ Bimbimon landing - open-sourse web2 app for children's book publishing house
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/dgusakov/bimbimon-landing/main/src/img/blockchain-game-demo.gif">
+  <img src="https://raw.githubusercontent.com/dgusakov/bimbimon-landing/main/src/img/crypto-game-demo.gif">
 </p>
 
 # Issues 🚨
