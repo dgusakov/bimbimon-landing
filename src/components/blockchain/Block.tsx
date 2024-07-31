@@ -1,5 +1,5 @@
-import "../../css/App.css";
-import { useState } from "react";
+import '../../css/App.css';
+import { useState } from 'react';
 import { BLOCK_GROUPS } from '../../data/blockchain';
 
 // Block component
@@ -22,7 +22,7 @@ function Block(props: any) {
   };
 
   // Determine the class name based on the activation status
-  const className = activated ? "block-icon activated" : "block";
+  const className = activated ? 'block-icon activated' : 'block';
 
   // Render the Block component with the BlockIcon and onClick handler
   return (

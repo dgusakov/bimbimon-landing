@@ -1,13 +1,13 @@
-import "../css//App.css";
-import { getGameTopic } from "../data/questions";
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import BackButton from "./navs/BackButton";
-import HeaderBold from "./labels/HeaderBold";
-import HeaderLight from "./labels/HeaderLight";
-import Answer from "./functional/Answer";
-import NotFound from "./NotFound";
-import { refreshPage } from "../heplers";
+import '../css//App.css';
+import { getGameTopic } from '../data/questions';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import BackButton from './navs/BackButton';
+import HeaderBold from './labels/HeaderBold';
+import HeaderLight from './labels/HeaderLight';
+import Answer from './functional/Answer';
+import NotFound from './NotFound';
+import { refreshPage } from '../heplers';
 
 // Function to generate a random integer between 0 and max (exclusive)
 function getRandomInt(max: number): number {
@@ -24,7 +24,7 @@ function shuffleArray(array: any[]): any[] {
   return shuffledArray;
 }
 
-function Question(props: any) {
+function Question() {
   // Get the URL parameters
   let urlParams = useParams();
 
@@ -96,15 +96,15 @@ function Question(props: any) {
             {allQuestionsShown ? (
               // If all questions have been shown, disable the button
               <div>
-              <button
-              id="restartQuiz"
-              className="btn btn-scd btn-block"
-              type="button"
-              onClick={refreshPage}
-            >
-              Начать заново
-            </button>
-            </div>
+                <button
+                  id="restartQuiz"
+                  className="btn btn-scd btn-block"
+                  type="button"
+                  onClick={refreshPage}
+                >
+                  Начать заново
+                </button>
+              </div>
             ) : (
               // Show the "Next Question" button
               <button

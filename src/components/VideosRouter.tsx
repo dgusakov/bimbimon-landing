@@ -1,14 +1,13 @@
-import "../css//App.css";
-import { getVideoLink } from "../data/videos";
-import React from "react";
-import { useParams } from "react-router-dom";
-import NotFound from "./NotFound";
-import HeaderBoldCenter from "./labels/HeaderBoldCenter";
+import '../css//App.css';
+import { getVideoLink } from '../data/videos';
+import { useParams } from 'react-router-dom';
+import NotFound from './NotFound';
+import HeaderBoldCenter from './labels/HeaderBoldCenter';
 
-function VideosRouter(props: any) {
+function VideosRouter() {
   let urlParams = useParams();
   try {
-    const link = getVideoLink(urlParams.id || "");
+    const link = getVideoLink(urlParams.id || '');
     window.location.href = link;
     return (
       <div className="container mt-3">

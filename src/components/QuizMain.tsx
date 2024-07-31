@@ -1,23 +1,28 @@
-import "../css//App.css";
-import { IGame, Questions } from "../data/questions"; // Import the IGame interface and the Questions array
-import React from "react";
-import ListButtonWithArrow from "./navs/ListButtonWithArrow";
-import HeaderBoldCenter from "./labels/HeaderBoldCenter"; 
-import ListItem from "./navs/ListItem";
+import '../css/App.css';
+import { IGame, Questions } from '../data/questions';
+import ListButtonWithArrow from './navs/ListButtonWithArrow';
+import HeaderBoldCenter from './labels/HeaderBoldCenter';
+import ListItem from './navs/ListItem';
+
+interface QuizMainProps {
+  path?: string;
+}
 
 // Component QuizMain, displaying the list of games
-function QuizMain(props: any) {
-  let path = props.path ? props.path : "."; // Define the path for links to games (can be passed through props)
-
+function QuizMain({ path = '.' }: QuizMainProps) {
   return (
     <div>
       <div className="container mb-4">
-        <HeaderBoldCenter name="Выберите игру" /> {/* Header with bold styling and centered alignment */}
+        <HeaderBoldCenter name="Выберите игру" />
       </div>
       <div className="container">
         {Questions.map((el: IGame, index: number) => (
           // Display a button with an arrow for each game from the Questions array
-          <ListButtonWithArrow displayName={el.displayName} link={path + "/"+ el.name} key={index} />
+          <ListButtonWithArrow
+            displayName={el.displayName}
+            link={`${path}/${el.name}`}
+            key={index}
+          />
         ))}
         <ListItem displayName="Больше книг-игр уже скоро!" />
       </div>

@@ -1,6 +1,6 @@
-import "../../css/App.css";
-import React, { useState } from "react";
-import HeaderLight from "../labels/HeaderLight";
+import '../../css/App.css';
+import React, { useState } from 'react';
+import HeaderLight from '../labels/HeaderLight';
 
 function Answer(props: any) {
   // State to track whether the answer is visible or hidden
@@ -14,7 +14,7 @@ function Answer(props: any) {
   return (
     <div>
       {/* The answer section, hidden by default if showAnswer is false */}
-      <div id="answer" style={{ display: showAnswer ? "block" : "none" }}>
+      <div id="answer" style={{ display: showAnswer ? 'block' : 'none' }}>
         <HeaderLight name="Ответ" />
         <div className="mt-3" id="question">
           <div id="answerBody">{props.children}</div>
@@ -27,7 +27,7 @@ function Answer(props: any) {
           className="btn btn-main"
           type="button"
           onClick={toggleAnswer}
-          style={{ display: showAnswer ? "none" : "block" }}
+          style={{ display: showAnswer ? 'none' : 'block' }}
         >
           Узнать ответ
         </button>
@@ -37,7 +37,7 @@ function Answer(props: any) {
           className="btn btn-main"
           type="button"
           onClick={toggleAnswer}
-          style={{ display: showAnswer ? "block" : "none" }}
+          style={{ display: showAnswer ? 'block' : 'none' }}
         >
           Скрыть ответ
         </button>

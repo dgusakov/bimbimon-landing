@@ -35,8 +35,11 @@
 
 .tile-red {
   background-color: #f25022;
-  box-shadow: 0 0 0 1px #f25022 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
-    0 8px 0 0 #c93a12, 0 8px 0 1px rgba(0, 0, 0, 0.4),
+  box-shadow:
+    0 0 0 1px #f25022 inset,
+    0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+    0 8px 0 0 #c93a12,
+    0 8px 0 1px rgba(0, 0, 0, 0.4),
     0 8px 8px 1px rgba(0, 0, 0, 0.5);
   transition: 0.15s;
 }
@@ -60,8 +63,11 @@
 */
 .tile-green {
   background-color: #7fba00;
-  box-shadow: 0 0 0 1px #7fba00 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
-    0 8px 0 0 #638f05, 0 8px 0 1px rgba(0, 0, 0, 0.4),
+  box-shadow:
+    0 0 0 1px #7fba00 inset,
+    0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+    0 8px 0 0 #638f05,
+    0 8px 0 1px rgba(0, 0, 0, 0.4),
     0 8px 8px 1px rgba(0, 0, 0, 0.5);
   transition: 0.15s;
 }
@@ -85,8 +91,11 @@
 */
 .tile-yellow {
   background-color: #ffb900;
-  box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
-    0 8px 0 0 #c28e07, 0 8px 0 1px rgba(0, 0, 0, 0.4),
+  box-shadow:
+    0 0 0 1px #ffb900 inset,
+    0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+    0 8px 0 0 #c28e07,
+    0 8px 0 1px rgba(0, 0, 0, 0.4),
     0 8px 8px 1px rgba(0, 0, 0, 0.5);
   transition: 0.15s;
 }
@@ -110,8 +119,11 @@
 */
 .tile-blue {
   background-color: #00a4ef;
-  box-shadow: 0 0 0 1px #00a4ef inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
-    0 8px 0 0 #0883bc, 0 8px 0 1px rgba(0, 0, 0, 0.4),
+  box-shadow:
+    0 0 0 1px #00a4ef inset,
+    0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+    0 8px 0 0 #0883bc,
+    0 8px 0 1px rgba(0, 0, 0, 0.4),
     0 8px 8px 1px rgba(0, 0, 0, 0.5);
   transition: 0.15s;
 }

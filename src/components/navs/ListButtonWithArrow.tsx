@@ -1,6 +1,6 @@
-import "../../css//App.css";
-import React from "react";
-import { ReactComponent as ArrowRight } from "../../img/arrow-right.svg";
+import '../../css//App.css';
+import React from 'react';
+import { ReactComponent as ArrowRight } from '../../img/arrow-right.svg';
 
 function ListButtonWithArrow(props: any) {
   if (props.external) {

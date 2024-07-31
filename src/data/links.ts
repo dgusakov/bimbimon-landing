@@ -1,5 +1,5 @@
 export const links = new Map<string, string>([
-  ["templates", "https://disk.yandex.ru/d/PK_lFWHpvFSXOQ"],
+  ['templates', 'https://disk.yandex.ru/d/PK_lFWHpvFSXOQ'],
 ]);
 
 export function getLink(name: string) {

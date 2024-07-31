@@ -1,7 +1,7 @@
-import "../css//App.css";
+import '../css//App.css';
 import logo from '../img/logo.svg';
-import { Navbar } from "react-bootstrap";
-import React from "react";
+import { Navbar } from 'react-bootstrap';
+import React from 'react';
 
 function Header() {
   return (

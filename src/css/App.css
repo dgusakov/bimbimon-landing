@@ -2,14 +2,13 @@
   min-height: 100vh !important;
 }
 
-@media not all and (min-resolution:.001dpcm)
-{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-  .main {
-    min-height: -webkit-fill-available !important;
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .main {
+      min-height: -webkit-fill-available !important;
+    }
   }
 }
-}
-
 
 html {
   min-height: -webkit-fill-available;
@@ -51,7 +50,7 @@ html {
   min-height: 20px;
   min-width: 20px;
   pointer-events: none;
-  fill: #7D7D7D;
+  fill: #7d7d7d;
 }
 
 .Social-logo-inline {
@@ -115,21 +114,21 @@ html {
 }
 
 .btn-main {
-  background-color: #009B9B;
-  border-color: #009B9B;
+  background-color: #009b9b;
+  border-color: #009b9b;
   border-radius: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .btn-scd {
-  background-color: #FFFFFF;
-  border-color: #009B9B;
+  background-color: #ffffff;
+  border-color: #009b9b;
   border-radius: 10px;
   color: #000000;
 }
 
 .btn-for-startOver-and-hint {
-  display:block;
+  display: block;
   margin: 20px;
   margin-left: 10px;
 }
@@ -155,7 +154,6 @@ html {
 }
 
 .btn-block {
-  width: 100%; 
-  margin-top: 10px; 
-  
+  width: 100%;
+  margin-top: 10px;
 }

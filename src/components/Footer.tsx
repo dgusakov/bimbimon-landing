@@ -1,8 +1,8 @@
-import "../css//App.css";
-import { ReactComponent as YouTubeLogo } from "../img/youtube.svg";
-import { ReactComponent as Cart } from "../img/cart.svg";
-import { ReactComponent as VKLogo } from "../img/vk.svg";
-import React from "react";
+import '../css//App.css';
+import { ReactComponent as YouTubeLogo } from '../img/youtube.svg';
+import { ReactComponent as Cart } from '../img/cart.svg';
+import { ReactComponent as VKLogo } from '../img/vk.svg';
+import React from 'react';
 
 const year = new Date().getFullYear();
 
