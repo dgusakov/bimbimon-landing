@@ -1,11 +1,10 @@
-import '../css//App.css';
-import { getBookLink } from '../data/books';
-import React from 'react';
+import '../../css/App.css';
+import { getBookLink } from '../../data/books';
 import { useParams } from 'react-router-dom';
-import NotFound from './NotFound';
-import HeaderBoldCenter from './labels/HeaderBoldCenter';
+import NotFound from '../NotFound';
+import HeaderBoldCenter from '../labels/HeaderBoldCenter';
 
-function BooksRouter(props: any) {
+const BooksRouter = () => {
   let urlParams = useParams();
   try {
     const link = getBookLink(urlParams.id || '');
@@ -19,6 +18,6 @@ function BooksRouter(props: any) {
     console.error(error);
     return <NotFound />;
   }
-}
+};
 
 export default BooksRouter;

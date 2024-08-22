@@ -1,5 +1,4 @@
 import '../css//App.css';
-import React from 'react';
 import notFound from '../img/404.png';
 import HeaderBoldCenter from './labels/HeaderBoldCenter';
 

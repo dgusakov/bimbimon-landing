@@ -1,11 +1,10 @@
-import '../css//App.css';
-import { getLink } from '../data/links';
-import React from 'react';
+import '../../css/App.css';
+import { getLink } from '../../data/links';
 import { useParams } from 'react-router-dom';
-import NotFound from './NotFound';
-import HeaderBoldCenter from './labels/HeaderBoldCenter';
+import NotFound from '../NotFound';
+import HeaderBoldCenter from '../labels/HeaderBoldCenter';
 
-function LinksRouter(props: any) {
+const LinksRouter = () => {
   let urlParams = useParams();
   try {
     const link = getLink(urlParams.id || '');
@@ -19,6 +18,6 @@ function LinksRouter(props: any) {
     console.error(error);
     return <NotFound />;
   }
-}
+};
 
 export default LinksRouter;

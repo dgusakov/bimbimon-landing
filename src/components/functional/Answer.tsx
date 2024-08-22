@@ -1,5 +1,5 @@
 import '../../css/App.css';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import HeaderLight from '../labels/HeaderLight';
 
 function Answer(props: any) {

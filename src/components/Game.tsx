@@ -1,13 +1,16 @@
 import '../css/App.css';
 import { getGame, ITopic } from '../data/games';
-import React from 'react';
 import { useParams } from 'react-router-dom';
 import HeaderBold from './labels/HeaderBold';
 import HeaderLight from './labels/HeaderLight';
 import TextWithHeader from './text/TextWithHeader';
 import NotFound from './NotFound';
 
-function Game(props: any) {
+interface GameProps {
+  path: string;
+}
+
+const Game: React.FC<GameProps> = () => {
   let urlParams = useParams();
   try {
     const game = getGame(urlParams.game);
@@ -28,6 +31,6 @@ function Game(props: any) {
     console.error(error);
     return <NotFound />;
   }
-}
+};
 
 export default Game;

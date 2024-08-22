@@ -1,15 +1,15 @@
-import '../css/App.css';
-import { IGame, Questions } from '../data/questions';
-import ListButtonWithArrow from './navs/ListButtonWithArrow';
-import HeaderBoldCenter from './labels/HeaderBoldCenter';
-import ListItem from './navs/ListItem';
+import '../../css/App.css';
+import { IGame, Questions } from '../../data/questions';
+import ListButtonWithArrow from '../navs/ListButtonWithArrow';
+import HeaderBoldCenter from '../labels/HeaderBoldCenter';
+import ListItem from '../navs/ListItem';
 
 interface QuizMainProps {
   path?: string;
 }
 
 // Component QuizMain, displaying the list of games
-function QuizMain({ path = '.' }: QuizMainProps) {
+const QuizMain = ({ path = '.' }: QuizMainProps) => {
   return (
     <div>
       <div className="container mb-4">
@@ -28,6 +28,6 @@ function QuizMain({ path = '.' }: QuizMainProps) {
       </div>
     </div>
   );
-}
+};
 
 export default QuizMain;

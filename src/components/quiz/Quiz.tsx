@@ -1,10 +1,11 @@
-import '../css/App.css';
-import { getGame, IGame } from '../data/questions';
+import React from 'react';
+import '../../css/App.css';
+import { getGame, IGame } from '../../data/questions';
 import { useParams } from 'react-router-dom';
-import ListButtonWithArrow from './navs/ListButtonWithArrow';
-import HeaderBold from './labels/HeaderBold';
-import HeaderLight from './labels/HeaderLight';
-import NotFound from './NotFound';
+import ListButtonWithArrow from '../navs/ListButtonWithArrow';
+import HeaderBold from '../labels/HeaderBold';
+import HeaderLight from '../labels/HeaderLight';
+import NotFound from '../NotFound';
 
 interface QuizProps {
   path?: string;
@@ -14,7 +15,7 @@ interface UrlParams extends Record<string, string | undefined> {
   game: string;
 }
 
-function Quiz({ path = '.' }: QuizProps) {
+const Quiz: React.FC<QuizProps> = ({ path = '.' }) => {
   // Get the URL parameters
   const urlParams = useParams<UrlParams>();
 
@@ -44,6 +45,6 @@ function Quiz({ path = '.' }: QuizProps) {
     console.error(error);
     return <NotFound />;
   }
-}
+};
 
 export default Quiz;

@@ -1,32 +1,34 @@
-import '../css//App.css';
-import { getGameTopic } from '../data/questions';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import BackButton from './navs/BackButton';
-import HeaderBold from './labels/HeaderBold';
-import HeaderLight from './labels/HeaderLight';
-import Answer from './functional/Answer';
-import NotFound from './NotFound';
-import { refreshPage } from '../heplers';
+import BackButton from '../navs/BackButton';
+import HeaderBold from '../labels/HeaderBold';
+import HeaderLight from '../labels/HeaderLight';
+import Answer from '../functional/Answer';
+import NotFound from '../NotFound';
+import { getGameTopic } from '../../data/questions';
+import { refreshPage } from '../../heplers';
+import '../../css/App.css';
 
 // Function to generate a random integer between 0 and max (exclusive)
-function getRandomInt(max: number): number {
-  return Math.floor(Math.random() * max);
-}
+const getRandomInt = (max: number): number => Math.floor(Math.random() * max);
 
 // Function to shuffle an array randomly
-function shuffleArray(array: any[]): any[] {
+const shuffleArray = (array: any[]): any[] => {
   const shuffledArray = [...array];
   for (let i = shuffledArray.length - 1; i > 0; i--) {
     const j = getRandomInt(i + 1);
     [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
   }
   return shuffledArray;
+};
+
+interface QuestionProps {
+  path: string;
 }
 
-function Question() {
+const Question: React.FC<QuestionProps> = () => {
   // Get the URL parameters
-  let urlParams = useParams();
+  const { game, topic } = useParams<{ game: string; topic: string }>();
 
   // State variables
   const [questions, setQuestions] = useState<any[]>([]);
@@ -35,12 +37,12 @@ function Question() {
 
   // Load the questions for the current topic on component mount and when topic changes
   useEffect(() => {
-    const topic = getGameTopic(urlParams.game, urlParams.topic);
-    const shuffledQuestions = shuffleArray(topic.questions);
+    const topicData = getGameTopic(game, topic);
+    const shuffledQuestions = shuffleArray(topicData.questions);
     setQuestions(shuffledQuestions);
     setCurrentQuestionIndex(0);
     setAllQuestionsShown(false);
-  }, [urlParams.game, urlParams.topic]);
+  }, [game, topic]);
 
   // Function to handle the "Next Question" button click
   const showNextQuestion = () => {
@@ -54,7 +56,7 @@ function Question() {
   };
 
   try {
-    const topic = getGameTopic(urlParams.game, urlParams.topic);
+    const topicData = getGameTopic(game, topic);
 
     // Check if there are no questions to show
     if (questions.length === 0) {
@@ -66,7 +68,7 @@ function Question() {
             </div>
           </div>
           <div className="container mt-2">
-            <HeaderBold name={topic.displayName} />
+            <HeaderBold name={topicData.displayName} />
             <HeaderLight name="Вопрос" />
             <div className="mt-3" id="question">
               <div id="questionBody"> Вопросов по теме не найдено </div>
@@ -86,7 +88,7 @@ function Question() {
           </div>
         </div>
         <div className="container mt-2">
-          <HeaderBold name={topic.displayName} />
+          <HeaderBold name={topicData.displayName} />
           <HeaderLight name="Вопрос" />
           <div className="mt-3" id="question">
             <div id="questionBody">{currentQuestion.question}</div>
@@ -124,6 +126,6 @@ function Question() {
     console.error(error);
     return <NotFound />;
   }
-}
+};
 
 export default Question;

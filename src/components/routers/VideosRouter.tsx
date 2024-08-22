@@ -1,10 +1,10 @@
-import '../css//App.css';
-import { getVideoLink } from '../data/videos';
+import '../../css/App.css';
+import { getVideoLink } from '../../data/videos';
 import { useParams } from 'react-router-dom';
-import NotFound from './NotFound';
-import HeaderBoldCenter from './labels/HeaderBoldCenter';
+import NotFound from '../NotFound';
+import HeaderBoldCenter from '../labels/HeaderBoldCenter';
 
-function VideosRouter() {
+const VideosRouter = () => {
   let urlParams = useParams();
   try {
     const link = getVideoLink(urlParams.id || '');
@@ -18,6 +18,6 @@ function VideosRouter() {
     console.error(error);
     return <NotFound />;
   }
-}
+};
 
 export default VideosRouter;

@@ -1,22 +1,25 @@
-import '../css//App.css';
-import { IGame, GAMES } from '../data/games';
 import React from 'react';
+import '../css/App.css';
+import { IGame, GAMES } from '../data/games';
 import ListButtonWithArrow from './navs/ListButtonWithArrow';
 import HeaderBoldCenter from './labels/HeaderBoldCenter';
 import ListItem from './navs/ListItem';
 
-function GamesMain(props: any) {
-  let path = props.path ? props.path : '.';
+interface GamesMainProps {
+  path?: string;
+}
+
+const GamesMain: React.FC<GamesMainProps> = ({ path = '.' }) => {
   return (
     <div>
       <div className="container mb-4">
         <HeaderBoldCenter name="Выберите игру" />
       </div>
       <div className="container">
-        {GAMES.map((el: IGame, index: number) => (
+        {GAMES.map((game: IGame, index: number) => (
           <ListButtonWithArrow
-            displayName={el.displayName}
-            link={path + '/' + el.name}
+            displayName={game.displayName}
+            link={`${path}/${game.name}`}
             key={index}
           />
         ))}
@@ -24,6 +27,6 @@ function GamesMain(props: any) {
       </div>
     </div>
   );
-}
+};
 
 export default GamesMain;

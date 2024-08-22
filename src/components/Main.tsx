@@ -1,5 +1,4 @@
 import '../css//App.css';
-import React from 'react';
 import HeaderBoldCenter from './labels/HeaderBoldCenter';
 import ListButtonWithArrow from './navs/ListButtonWithArrow';
 import ListButtonWithIcon from './navs/ListButtonWithIcon';

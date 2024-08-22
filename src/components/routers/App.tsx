@@ -1,23 +1,23 @@
-import '../css//App.css';
 import React from 'react';
+import '../../css/App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Header from './Header';
-import Footer from './Footer';
-import Main from './Main';
-import Quiz from './Quiz';
-import QuizMain from './QuizMain';
-import Game from './Game';
-import GamesMain from './GamesMain';
-import NotFound from './NotFound';
-import Question from './Question';
-import Videos from './Videos';
+import Header from '../Header';
+import Footer from '../Footer';
+import Main from '../Main';
+import Quiz from '../quiz/Quiz';
+import QuizMain from '../quiz/QuizMain';
+import Game from '../Game';
+import GamesMain from '../GamesMain';
+import NotFound from '../NotFound';
+import Question from '../quiz/Question';
+import Videos from '../Videos';
 import VideosRouter from './VideosRouter';
 import BooksRouter from './BooksRouter';
 import LinksRouter from './FilesRouter';
-import Buy from './Buy';
-import Blockchain from './blockchain/Blockchain';
+import Buy from '../Buy';
+import Blockchain from '../blockchain/Blockchain';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="d-flex flex-column main">
       <BrowserRouter>
@@ -49,6 +49,6 @@ function App() {
       </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;
