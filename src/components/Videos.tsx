@@ -1,12 +1,11 @@
-import "../css//App.css";
-import React from "react";
-import HeaderBoldCenter from "./labels/HeaderBoldCenter";
-import ListButtonWithIcon from "./navs/ListButtonWithIcon";
-import { ReactComponent as YouTubeLogo } from "../img/youtube.svg";
-import { ReactComponent as VKLogo } from "../img/vk.svg";
-import { ReactComponent as RuTubeLogo } from "../img/rutube.svg";
+import '../css//App.css';
+import HeaderBoldCenter from './labels/HeaderBoldCenter';
+import ListButtonWithIcon from './navs/ListButtonWithIcon';
+import { ReactComponent as YouTubeLogo } from '../img/youtube.svg';
+import { ReactComponent as VKLogo } from '../img/vk.svg';
+import { ReactComponent as RuTubeLogo } from '../img/rutube.svg';
 
-function Videos() {
+const Videos = () => {
   return (
     <div className="container">
       <HeaderBoldCenter name="Познавательные ролики" key="videos" />
@@ -38,6 +37,6 @@ function Videos() {
       </div>
     </div>
   );
-}
+};
 
 export default Videos;

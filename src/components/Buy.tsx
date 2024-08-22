@@ -1,9 +1,8 @@
-import "../css//App.css";
-import React from "react";
-import HeaderBoldCenter from "./labels/HeaderBoldCenter";
-import ListButtonWithArrow from "./navs/ListButtonWithArrow";
+import '../css//App.css';
+import HeaderBoldCenter from './labels/HeaderBoldCenter';
+import ListButtonWithArrow from './navs/ListButtonWithArrow';
 
-function Buy() {
+const Buy = () => {
   return (
     <div className="container">
       <HeaderBoldCenter name="Купить наши книги" key="buy" />
@@ -29,6 +28,6 @@ function Buy() {
       </div>
     </div>
   );
-}
+};
 
 export default Buy;

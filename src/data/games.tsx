@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import { ReactElement } from 'react';
 
 export interface IGame {
   name: string;
@@ -12,24 +12,24 @@ export interface ITopic {
 }
 
 export function getGame(name: string | undefined) {
-    const mathes = GAMES.filter((el: IGame) => el.name === name);
-    switch (mathes.length) {
-      case 0:
-        throw new Error(`Game ${name} not found`);
-      case 1:
-        return mathes[0];
-      default:
-        throw new Error(`More than 1 game with name ${name} found`);
-    }
+  const mathes = GAMES.filter((el: IGame) => el.name === name);
+  switch (mathes.length) {
+    case 0:
+      throw new Error(`Game ${name} not found`);
+    case 1:
+      return mathes[0];
+    default:
+      throw new Error(`More than 1 game with name ${name} found`);
   }
+}
 
 export const GAMES: IGame[] = [
   {
-    name: "emotions",
-    displayName: "Эмоции",
+    name: 'emotions',
+    displayName: 'Эмоции',
     content: [
       {
-        title: "Угадай эмоцию",
+        title: 'Угадай эмоцию',
         body: (
           <div>
             На столе картинкой вниз выкладываются карточки с изображением
@@ -46,7 +46,7 @@ export const GAMES: IGame[] = [
         ),
       },
       {
-        title: "Как ты себя сегодня чувствуешь?",
+        title: 'Как ты себя сегодня чувствуешь?',
         body: (
           <div>
             Карточки раскладываются картинкой вверх.
@@ -57,7 +57,7 @@ export const GAMES: IGame[] = [
         ),
       },
       {
-        title: "Встреча эмоций",
+        title: 'Встреча эмоций',
         body: (
           <div>
             Карточки с изображением эмоций делятся на две группы – «хорошую» и
@@ -73,7 +73,7 @@ export const GAMES: IGame[] = [
         ),
       },
       {
-        title: "Как ты себя сегодня чувствуешь?",
+        title: 'Как ты себя сегодня чувствуешь?',
         body: (
           <div>
             Карточки раскладываются картинкой вверх.
@@ -84,7 +84,7 @@ export const GAMES: IGame[] = [
         ),
       },
       {
-        title: "Снимается кино",
+        title: 'Снимается кино',
         body: (
           <div>
             Участники игры выбирают для разыгрывания какую-то известную сказку.
@@ -96,7 +96,7 @@ export const GAMES: IGame[] = [
         ),
       },
       {
-        title: "Нарисуй настроение",
+        title: 'Нарисуй настроение',
         body: (
           <div>
             Карточки с эмоциями раскладываются картинкой вниз. Каждый участник
@@ -109,7 +109,7 @@ export const GAMES: IGame[] = [
         ),
       },
       {
-        title: "Грустный заяц",
+        title: 'Грустный заяц',
         body: (
           <div>
             Карточки с эмоциями раскладываются картинкой вниз. Участники
@@ -119,7 +119,7 @@ export const GAMES: IGame[] = [
         ),
       },
       {
-        title: "Найди похожую эмоцию",
+        title: 'Найди похожую эмоцию',
         body: (
           <div>
             Карточки с эмоциями раскладываются картинкой вверх. Ребёнок берет

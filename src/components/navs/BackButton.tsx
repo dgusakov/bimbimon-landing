@@ -1,6 +1,6 @@
-import "../../css//App.css";
-import React from "react";
-import { ReactComponent as ArrowLeft } from "../../img/arrow-left.svg";
+import '../../css//App.css';
+import React from 'react';
+import { ReactComponent as ArrowLeft } from '../../img/arrow-left.svg';
 
 function BackButton(props: any) {
   return (

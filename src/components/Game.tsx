@@ -1,13 +1,16 @@
-import "../css/App.css";
+import '../css/App.css';
 import { getGame, ITopic } from '../data/games';
-import React from "react";
-import { useParams } from "react-router-dom";
-import HeaderBold from "./labels/HeaderBold";
-import HeaderLight from "./labels/HeaderLight";
-import TextWithHeader from "./text/TextWithHeader";
-import NotFound from "./NotFound";
+import { useParams } from 'react-router-dom';
+import HeaderBold from './labels/HeaderBold';
+import HeaderLight from './labels/HeaderLight';
+import TextWithHeader from './text/TextWithHeader';
+import NotFound from './NotFound';
 
-function Game(props: any) {
+interface GameProps {
+  path: string;
+}
+
+const Game: React.FC<GameProps> = () => {
   let urlParams = useParams();
   try {
     const game = getGame(urlParams.game);
@@ -18,7 +21,9 @@ function Game(props: any) {
           <HeaderBold name={'"' + game.displayName + '"'} />
         </div>
         <div className="container mb-4">
-        {game.content.map((topic: ITopic) => <TextWithHeader name={topic.title} body={topic.body}/>)}
+          {game.content.map((topic: ITopic) => (
+            <TextWithHeader name={topic.title} body={topic.body} />
+          ))}
         </div>
       </div>
     );
@@ -26,6 +31,6 @@ function Game(props: any) {
     console.error(error);
     return <NotFound />;
   }
-}
+};
 
 export default Game;

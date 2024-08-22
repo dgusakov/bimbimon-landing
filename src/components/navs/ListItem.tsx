@@ -1,5 +1,5 @@
-import "../../css//App.css";
-import React from "react";
+import '../../css//App.css';
+import React from 'react';
 
 function ListItem(props: any) {
   return (
@@ -8,7 +8,7 @@ function ListItem(props: any) {
         <div className="col-auto">{props.displayName}</div>
       </div>
       <hr className="mt-1" />
-  </div>
+    </div>
   );
 }
 

@@ -1,5 +1,5 @@
 export const books = new Map<string, string>([
-  ["puss-in-boots", "https://youtu.be/CjZ7j71kpvM"],
+  ['puss-in-boots', 'https://youtu.be/CjZ7j71kpvM'],
 ]);
 
 export function getBookLink(name: string) {

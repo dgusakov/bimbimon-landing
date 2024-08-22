@@ -1,9 +1,8 @@
-import "../css//App.css";
+import '../css//App.css';
 import logo from '../img/logo.svg';
-import { Navbar } from "react-bootstrap";
-import React from "react";
+import { Navbar } from 'react-bootstrap';
 
-function Header() {
+const Header = () => {
   return (
     <header className="App-header">
       <Navbar className="mt-0">
@@ -19,6 +18,6 @@ function Header() {
       </Navbar>
     </header>
   );
-}
+};
 
 export default Header;

@@ -1,12 +1,11 @@
-import "../css//App.css";
-import { ReactComponent as YouTubeLogo } from "../img/youtube.svg";
-import { ReactComponent as Cart } from "../img/cart.svg";
-import { ReactComponent as VKLogo } from "../img/vk.svg";
-import React from "react";
+import '../css//App.css';
+import { ReactComponent as YouTubeLogo } from '../img/youtube.svg';
+import { ReactComponent as Cart } from '../img/cart.svg';
+import { ReactComponent as VKLogo } from '../img/vk.svg';
 
 const year = new Date().getFullYear();
 
-function Footer() {
+const Footer = () => {
   return (
     <footer className="footer mt-auto py-3 App-footer">
       <div className="container">
@@ -42,6 +41,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

@@ -1,21 +1,21 @@
-import { ReactElement } from "react";
-import { ReactComponent as Sign11 } from "./img/RU_road_sign_1.1.svg";
-import { ReactComponent as Sign12 } from "./img/RU_road_sign_1.2.svg";
-import { ReactComponent as Sign1111 } from "./img/RU_road_sign_1.11.1.svg";
-import { ReactComponent as Sign1112 } from "./img/RU_road_sign_1.11.2.svg";
-import { ReactComponent as Sign1121 } from "./img/RU_road_sign_1.12.1.svg";
-import { ReactComponent as Sign1122 } from "./img/RU_road_sign_1.12.2.svg";
-import { ReactComponent as Sign122 } from "./img/RU_road_sign_1.22.svg";
-import { ReactComponent as Sign123 } from "./img/RU_road_sign_1.23.svg";
-import { ReactComponent as Sign21 } from "./img/RU_road_sign_2.1.svg";
-import { ReactComponent as Sign24 } from "./img/RU_road_sign_2.4.svg";
-import { ReactComponent as Sign31 } from "./img/RU_road_sign_3.1.svg";
-import { ReactComponent as Sign32 } from "./img/RU_road_sign_3.2.svg";
-import { ReactComponent as Sign320 } from "./img/RU_road_sign_3.20.svg";
-import { ReactComponent as Sign32460 } from "./img/RU_road_sign_3.24-60.svg";
-import { ReactComponent as Sign5155 } from "./img/RU_road_sign_5.15.5.svg";
-import { ReactComponent as Sign5191 } from "./img/RU_road_sign_5.19.1.svg";
-import { ReactComponent as Sign5192 } from "./img/RU_road_sign_5.19.2.svg";
+import { ReactElement } from 'react';
+import { ReactComponent as Sign11 } from './img/RU_road_sign_1.1.svg';
+import { ReactComponent as Sign12 } from './img/RU_road_sign_1.2.svg';
+import { ReactComponent as Sign1111 } from './img/RU_road_sign_1.11.1.svg';
+import { ReactComponent as Sign1112 } from './img/RU_road_sign_1.11.2.svg';
+import { ReactComponent as Sign1121 } from './img/RU_road_sign_1.12.1.svg';
+import { ReactComponent as Sign1122 } from './img/RU_road_sign_1.12.2.svg';
+import { ReactComponent as Sign122 } from './img/RU_road_sign_1.22.svg';
+import { ReactComponent as Sign123 } from './img/RU_road_sign_1.23.svg';
+import { ReactComponent as Sign21 } from './img/RU_road_sign_2.1.svg';
+import { ReactComponent as Sign24 } from './img/RU_road_sign_2.4.svg';
+import { ReactComponent as Sign31 } from './img/RU_road_sign_3.1.svg';
+import { ReactComponent as Sign32 } from './img/RU_road_sign_3.2.svg';
+import { ReactComponent as Sign320 } from './img/RU_road_sign_3.20.svg';
+import { ReactComponent as Sign32460 } from './img/RU_road_sign_3.24-60.svg';
+import { ReactComponent as Sign5155 } from './img/RU_road_sign_5.15.5.svg';
+import { ReactComponent as Sign5191 } from './img/RU_road_sign_5.19.1.svg';
+import { ReactComponent as Sign5192 } from './img/RU_road_sign_5.19.2.svg';
 
 export interface IQuestion {
   topicName: string;
@@ -52,7 +52,7 @@ export function getGame(name: string | undefined) {
 
 export function getGameTopic(
   gameName: string | undefined,
-  topicName: string | undefined
+  topicName: string | undefined,
 ) {
   const game = getGame(gameName);
   const mathes = game.topics.filter((el: ITopic) => el.name === topicName);
@@ -63,25 +63,25 @@ export function getGameTopic(
       return mathes[0];
     default:
       throw new Error(
-        `More than 1 topic with ${topicName} found for game ${gameName}`
+        `More than 1 topic with ${topicName} found for game ${gameName}`,
       );
   }
 }
 
 export const Questions: IGame[] = [
   {
-    name: "money",
-    displayName: "Откуда берутся деньги?",
+    name: 'money',
+    displayName: 'Откуда берутся деньги?',
     topics: [
       {
-        id: "family-income",
-        name: "family-income",
-        displayName: "Семейный бюджет - Доходы",
+        id: 'family-income',
+        name: 'family-income',
+        displayName: 'Семейный бюджет - Доходы',
         questions: [
           {
-            topicName: "family-income",
-            questionName: "question-1",
-            id: "question-1",
+            topicName: 'family-income',
+            questionName: 'question-1',
+            id: 'question-1',
             question: <div>Что такое зарплата?</div>,
             answer: (
               <div>
@@ -92,9 +92,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "family-income",
-            questionName: "question-2",
-            id: "question-2",
+            topicName: 'family-income',
+            questionName: 'question-2',
+            id: 'question-2',
             question: <div>Что такое пенсия?</div>,
             answer: (
               <div>
@@ -106,9 +106,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "family-income",
-            questionName: "question-3",
-            id: "question-3",
+            topicName: 'family-income',
+            questionName: 'question-3',
+            id: 'question-3',
             question: <div>Что такое стипендия?</div>,
             answer: (
               <div>
@@ -118,9 +118,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "family-income",
-            questionName: "question-4",
-            id: "question-4",
+            topicName: 'family-income',
+            questionName: 'question-4',
+            id: 'question-4',
             question: <div>Что такое премия?</div>,
             answer: (
               <div>
@@ -130,9 +130,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "family-income",
-            questionName: "question-5",
-            id: "question-5",
+            topicName: 'family-income',
+            questionName: 'question-5',
+            id: 'question-5',
             question: <div>Что такое сезонные доходы?</div>,
             answer: (
               <div>
@@ -143,9 +143,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "family-income",
-            questionName: "question-6",
-            id: "question-6",
+            topicName: 'family-income',
+            questionName: 'question-6',
+            id: 'question-6',
             question: <div>Что такое гонорар?</div>,
             answer: (
               <div>
@@ -155,9 +155,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "family-income",
-            questionName: "question-7",
-            id: "question-7",
+            topicName: 'family-income',
+            questionName: 'question-7',
+            id: 'question-7',
             question: <div>Что такое дополнительные доходы?</div>,
             answer: (
               <div>
@@ -171,14 +171,14 @@ export const Questions: IGame[] = [
         ],
       },
       {
-        id: "family-spend",
-        name: "family-spend",
-        displayName: "Семейный бюджет - Расходы",
+        id: 'family-spend',
+        name: 'family-spend',
+        displayName: 'Семейный бюджет - Расходы',
         questions: [
           {
-            topicName: "family-spend",
-            questionName: "question-8",
-            id: "question-8",
+            topicName: 'family-spend',
+            questionName: 'question-8',
+            id: 'question-8',
             question: <div>Что такое семейный бюджет?</div>,
             answer: (
               <div>
@@ -189,9 +189,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "family-spend",
-            questionName: "question-9",
-            id: "question-9",
+            topicName: 'family-spend',
+            questionName: 'question-9',
+            id: 'question-9',
             question: <div>Что такое коммунальные расходы?</div>,
             answer: (
               <div>
@@ -201,9 +201,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "family-spend",
-            questionName: "question-10",
-            id: "question-10",
+            topicName: 'family-spend',
+            questionName: 'question-10',
+            id: 'question-10',
             question: <div>Какие расходы называют повседневными?</div>,
             answer: (
               <div>
@@ -214,9 +214,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "family-spend",
-            questionName: "question-11",
-            id: "question-11",
+            topicName: 'family-spend',
+            questionName: 'question-11',
+            id: 'question-11',
             question: <div>Что такое непредвиденные расходы?</div>,
             answer: (
               <div>
@@ -227,9 +227,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "family-spend",
-            questionName: "question-12",
-            id: "question-12",
+            topicName: 'family-spend',
+            questionName: 'question-12',
+            id: 'question-12',
             question: <div>Что такое транспортные расходы?</div>,
             answer: (
               <div>
@@ -239,9 +239,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "family-spend",
-            questionName: "question-13",
-            id: "question-13",
+            topicName: 'family-spend',
+            questionName: 'question-13',
+            id: 'question-13',
             question: <div>Куда тратятся деньги из семейного бюджета?</div>,
             answer: (
               <div>
@@ -252,9 +252,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "family-spend",
-            questionName: "question-14",
-            id: "question-14",
+            topicName: 'family-spend',
+            questionName: 'question-14',
+            id: 'question-14',
             question: <div>Что такое расходы на будущее?</div>,
             answer: (
               <div>
@@ -266,14 +266,14 @@ export const Questions: IGame[] = [
         ],
       },
       {
-        id: "bank",
-        name: "bank",
-        displayName: "Банк",
+        id: 'bank',
+        name: 'bank',
+        displayName: 'Банк',
         questions: [
           {
-            topicName: "bank",
-            questionName: "question-15",
-            id: "question-15",
+            topicName: 'bank',
+            questionName: 'question-15',
+            id: 'question-15',
             question: <div>Что такое банк?</div>,
             answer: (
               <div>
@@ -286,9 +286,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "bank",
-            questionName: "question-16",
-            id: "question-16",
+            topicName: 'bank',
+            questionName: 'question-16',
+            id: 'question-16',
             question: <div>Что такое вклад?</div>,
             answer: (
               <div>
@@ -300,9 +300,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "bank",
-            questionName: "question-17",
-            id: "question-17",
+            topicName: 'bank',
+            questionName: 'question-17',
+            id: 'question-17',
             question: <div>Что такое кредит?</div>,
             answer: (
               <div>
@@ -315,9 +315,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "bank",
-            questionName: "question-18",
-            id: "question-18",
+            topicName: 'bank',
+            questionName: 'question-18',
+            id: 'question-18',
             question: <div>Что такое ипотека?</div>,
             answer: (
               <div>
@@ -329,9 +329,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "bank",
-            questionName: "question-19",
-            id: "question-19",
+            topicName: 'bank',
+            questionName: 'question-19',
+            id: 'question-19',
             question: <div>Зачем люди могут прийти в банк?</div>,
             answer: (
               <div>
@@ -343,9 +343,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "bank",
-            questionName: "question-20",
-            id: "question-20",
+            topicName: 'bank',
+            questionName: 'question-20',
+            id: 'question-20',
             question: <div>Что такое электронная очередь?</div>,
             answer: (
               <div>
@@ -358,9 +358,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "bank",
-            questionName: "question-21",
-            id: "question-21",
+            topicName: 'bank',
+            questionName: 'question-21',
+            id: 'question-21',
             question: <div>Что такое банковский счёт?</div>,
             answer: (
               <div>
@@ -375,14 +375,14 @@ export const Questions: IGame[] = [
         ],
       },
       {
-        id: "payments",
-        name: "payments",
-        displayName: "Виды оплаты",
+        id: 'payments',
+        name: 'payments',
+        displayName: 'Виды оплаты',
         questions: [
           {
-            topicName: "payments",
-            questionName: "question-22",
-            id: "question-22",
+            topicName: 'payments',
+            questionName: 'question-22',
+            id: 'question-22',
             question: <div>Что такое деньги?</div>,
             answer: (
               <div>
@@ -391,18 +391,18 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "payments",
-            questionName: "question-23",
-            id: "question-23",
+            topicName: 'payments',
+            questionName: 'question-23',
+            id: 'question-23',
             question: <div>Что такое наличные деньги?</div>,
             answer: (
               <div>Наличные деньги – это монеты и банкноты (купюры).</div>
             ),
           },
           {
-            topicName: "payments",
-            questionName: "question-24",
-            id: "question-24",
+            topicName: 'payments',
+            questionName: 'question-24',
+            id: 'question-24',
             question: <div>Что такое безналичные деньги?</div>,
             answer: (
               <div>
@@ -412,9 +412,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "payments",
-            questionName: "question-25",
-            id: "question-25",
+            topicName: 'payments',
+            questionName: 'question-25',
+            id: 'question-25',
             question: (
               <div>
                 Какие виды пластиковых карт ты знаешь? Для чего они нужны?
@@ -429,9 +429,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "payments",
-            questionName: "question-26",
-            id: "question-26",
+            topicName: 'payments',
+            questionName: 'question-26',
+            id: 'question-26',
             question: <div>Что такое банкоматы и платежные терминалы?</div>,
             answer: (
               <div>
@@ -443,9 +443,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "payments",
-            questionName: "question-27",
-            id: "question-27",
+            topicName: 'payments',
+            questionName: 'question-27',
+            id: 'question-27',
             question: (
               <div>Какими способами можно оплатить товары в супермаркете?</div>
             ),
@@ -459,9 +459,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "payments",
-            questionName: "question-28",
-            id: "question-28",
+            topicName: 'payments',
+            questionName: 'question-28',
+            id: 'question-28',
             question: <div>Что такое POS-терминал</div>,
             answer: (
               <div>
@@ -477,13 +477,13 @@ export const Questions: IGame[] = [
       },
       {
         id: 'money',
-        name: "money",
-        displayName: "Деньги и Валюта",
+        name: 'money',
+        displayName: 'Деньги и Валюта',
         questions: [
           {
-            topicName: "money",
-            questionName: "question-29",
-            id: "question-29",
+            topicName: 'money',
+            questionName: 'question-29',
+            id: 'question-29',
             question: <div>Какие банкноты есть в России?</div>,
             answer: (
               <div>
@@ -494,9 +494,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "money",
-            questionName: "question-30",
-            id: "question-30",
+            topicName: 'money',
+            questionName: 'question-30',
+            id: 'question-30',
             question: <div>Что такое валюта?</div>,
             answer: (
               <div>
@@ -509,9 +509,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "money",
-            questionName: "question-31",
-            id: "question-31",
+            topicName: 'money',
+            questionName: 'question-31',
+            id: 'question-31',
             question: (
               <div>
                 Можно ли расплатиться в другой стране российскими рублями?
@@ -527,9 +527,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "money",
-            questionName: "question-32",
-            id: "question-32",
+            topicName: 'money',
+            questionName: 'question-32',
+            id: 'question-32',
             question: (
               <div>Почему нельзя делать и использовать фальшивые деньги?</div>
             ),
@@ -542,9 +542,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "money",
-            questionName: "question-33",
-            id: "question-33",
+            topicName: 'money',
+            questionName: 'question-33',
+            id: 'question-33',
             question: <div>Кто такой нумизмат? Кто был первым нумизматом?</div>,
             answer: (
               <div>
@@ -554,9 +554,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "money",
-            questionName: "question-34",
-            id: "question-34",
+            topicName: 'money',
+            questionName: 'question-34',
+            id: 'question-34',
             question: (
               <div>
                 Как называется единая денежная единица в странах Европы?
@@ -570,9 +570,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "money",
-            questionName: "question-35",
-            id: "question-35",
+            topicName: 'money',
+            questionName: 'question-35',
+            id: 'question-35',
             question: <div>Для чего нужны деньги? Назови четыре функции</div>,
             answer: (
               <div>
@@ -586,13 +586,13 @@ export const Questions: IGame[] = [
       },
       {
         id: 'history',
-        name: "history",
-        displayName: "История появления денег",
+        name: 'history',
+        displayName: 'История появления денег',
         questions: [
           {
-            topicName: "history",
-            questionName: "question-36",
-            id: "question-36",
+            topicName: 'history',
+            questionName: 'question-36',
+            id: 'question-36',
             question: <div>Что такое натуральный обмен?</div>,
             answer: (
               <div>
@@ -603,9 +603,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "history",
-            questionName: "question-37",
-            id: "question-37",
+            topicName: 'history',
+            questionName: 'question-37',
+            id: 'question-37',
             question: <div>Как появились самые первые бумажные деньги?</div>,
             answer: (
               <div>
@@ -618,18 +618,18 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "history",
-            questionName: "question-38",
-            id: "question-38",
+            topicName: 'history',
+            questionName: 'question-38',
+            id: 'question-38',
             question: <div>В каком государстве появились первые монеты?</div>,
             answer: (
               <div>Первые монеты стали делать в древнем государстве Лидии.</div>
             ),
           },
           {
-            topicName: "history",
-            questionName: "question-39",
-            id: "question-39",
+            topicName: 'history',
+            questionName: 'question-39',
+            id: 'question-39',
             question: <div>Как называется лицевая сторона монеты?</div>,
             answer: (
               <div>
@@ -639,9 +639,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "history",
-            questionName: "question-40",
-            id: "question-40",
+            topicName: 'history',
+            questionName: 'question-40',
+            id: 'question-40',
             question: <div>Как называется обратная сторона монеты?</div>,
             answer: (
               <div>
@@ -652,9 +652,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "history",
-            questionName: "question-41",
-            id: "question-41",
+            topicName: 'history',
+            questionName: 'question-41',
+            id: 'question-41',
             question: (
               <div>
                 Почему в данных странах именно эти товары стали выступать в
@@ -670,9 +670,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "history",
-            questionName: "question-42",
-            id: "question-42",
+            topicName: 'history',
+            questionName: 'question-42',
+            id: 'question-42',
             question: (
               <div>Как до появления денег люди расплачивались за товары?</div>
             ),
@@ -689,20 +689,20 @@ export const Questions: IGame[] = [
       },
       {
         id: 'smart-economy',
-        name: "smart-economy",
-        displayName: "Экономная экономика",
+        name: 'smart-economy',
+        displayName: 'Экономная экономика',
         questions: [
           {
-            topicName: "smart-economy",
-            questionName: "question-43",
-            id: "question-43",
+            topicName: 'smart-economy',
+            questionName: 'question-43',
+            id: 'question-43',
             question: <div>Что такое сбережения?</div>,
             answer: <div>Деньги, отложенные на будущее</div>,
           },
           {
-            topicName: "smart-economy",
-            questionName: "question-44",
-            id: "question-44",
+            topicName: 'smart-economy',
+            questionName: 'question-44',
+            id: 'question-44',
             question: <div>Что значит «экономить»?</div>,
             answer: (
               <div>
@@ -712,9 +712,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "smart-economy",
-            questionName: "question-45",
-            id: "question-45",
+            topicName: 'smart-economy',
+            questionName: 'question-45',
+            id: 'question-45',
             question: <div>Как можно экономить на коммунальных услугах?</div>,
             answer: (
               <div>
@@ -726,9 +726,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "smart-economy",
-            questionName: "question-46",
-            id: "question-46",
+            topicName: 'smart-economy',
+            questionName: 'question-46',
+            id: 'question-46',
             question: <div>Как можно экономить при покупке продуктов?</div>,
             answer: (
               <div>
@@ -741,9 +741,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "smart-economy",
-            questionName: "question-47",
-            id: "question-47",
+            topicName: 'smart-economy',
+            questionName: 'question-47',
+            id: 'question-47',
             question: (
               <div>
                 Как можно экономить при покупке одежды и товаров для дома?
@@ -758,9 +758,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "smart-economy",
-            questionName: "question-48",
-            id: "question-48",
+            topicName: 'smart-economy',
+            questionName: 'question-48',
+            id: 'question-48',
             question: (
               <div>
                 Назови слова, противоположные по смыслу для этих слов:
@@ -781,9 +781,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "smart-economy",
-            questionName: "question-49",
-            id: "question-49",
+            topicName: 'smart-economy',
+            questionName: 'question-49',
+            id: 'question-49',
             question: <div>Как сэкономить на транспортных расходах?</div>,
             answer: (
               <div>
@@ -797,13 +797,13 @@ export const Questions: IGame[] = [
       },
       {
         id: 'atm',
-        name: "atm",
-        displayName: "Как устроен банкомат",
+        name: 'atm',
+        displayName: 'Как устроен банкомат',
         questions: [
           {
-            topicName: "atm",
-            questionName: "question-50",
-            id: "question-50",
+            topicName: 'atm',
+            questionName: 'question-50',
+            id: 'question-50',
             question: <div>Для чего нужен банкомат?</div>,
             answer: (
               <div>
@@ -816,9 +816,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "atm",
-            questionName: "question-51",
-            id: "question-51",
+            topicName: 'atm',
+            questionName: 'question-51',
+            id: 'question-51',
             question: <div>Для чего нужен платёжный терминал?</div>,
             answer: (
               <div>
@@ -829,9 +829,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "atm",
-            questionName: "question-52",
-            id: "question-52",
+            topicName: 'atm',
+            questionName: 'question-52',
+            id: 'question-52',
             question: <div>Кто такой инкассатор?</div>,
             answer: (
               <div>
@@ -845,9 +845,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "atm",
-            questionName: "question-53",
-            id: "question-53",
+            topicName: 'atm',
+            questionName: 'question-53',
+            id: 'question-53',
             question: (
               <div>Можно ли открыть банкомат и забрать оттуда деньги?</div>
             ),
@@ -863,9 +863,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "atm",
-            questionName: "question-54",
-            id: "question-54",
+            topicName: 'atm',
+            questionName: 'question-54',
+            id: 'question-54',
             question: <div>Где в банкомате хранятся деньги?</div>,
             answer: (
               <div>
@@ -876,9 +876,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "atm",
-            questionName: "question-55",
-            id: "question-55",
+            topicName: 'atm',
+            questionName: 'question-55',
+            id: 'question-55',
             question: <div>Что такое пин-код?</div>,
             answer: (
               <div>
@@ -889,9 +889,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "atm",
-            questionName: "question-56",
-            id: "question-56",
+            topicName: 'atm',
+            questionName: 'question-56',
+            id: 'question-56',
             question: <div>Сколько денег можно снять в банкомате?</div>,
             answer: (
               <div>
@@ -908,18 +908,18 @@ export const Questions: IGame[] = [
     ],
   },
   {
-    name: "cars",
-    displayName: "Как устроены машины?",
+    name: 'cars',
+    displayName: 'Как устроены машины?',
     topics: [
       {
         id: 'how-cars-are-made',
-        name: "how-cars-are-made",
-        displayName: "Как делают автомобили",
+        name: 'how-cars-are-made',
+        displayName: 'Как делают автомобили',
         questions: [
           {
-            topicName: "how-cars-are-made",
-            questionName: "question-57",
-            id: "question-57",
+            topicName: 'how-cars-are-made',
+            questionName: 'question-57',
+            id: 'question-57',
             question: (
               <div>
                 Почему большую часть операций по сборке автомобиля делают
@@ -934,9 +934,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "how-cars-are-made",
-            questionName: "question-58",
-            id: "question-58",
+            topicName: 'how-cars-are-made',
+            questionName: 'question-58',
+            id: 'question-58',
             question: <div>Зачем машину помещают в дождевальную камеру?</div>,
             answer: (
               <div>
@@ -947,9 +947,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "how-cars-are-made",
-            questionName: "question-59",
-            id: "question-59",
+            topicName: 'how-cars-are-made',
+            questionName: 'question-59',
+            id: 'question-59',
             question: (
               <div>Что на заводе называют шутливым термином «свадьба»?</div>
             ),
@@ -960,9 +960,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "how-cars-are-made",
-            questionName: "question-60",
-            id: "question-60",
+            topicName: 'how-cars-are-made',
+            questionName: 'question-60',
+            id: 'question-60',
             question: <div>Что такое конвейер?</div>,
             answer: (
               <div>
@@ -974,9 +974,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "how-cars-are-made",
-            questionName: "question-61",
-            id: "question-61",
+            topicName: 'how-cars-are-made',
+            questionName: 'question-61',
+            id: 'question-61',
             question: <div>Для чего кузов окунают в три ванны?</div>,
             answer: (
               <div>
@@ -986,9 +986,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "how-cars-are-made",
-            questionName: "question-62",
-            id: "question-62",
+            topicName: 'how-cars-are-made',
+            questionName: 'question-62',
+            id: 'question-62',
             question: (
               <div>Все ли детали автомобиля производят на одном заводе?</div>
             ),
@@ -1001,9 +1001,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "how-cars-are-made",
-            questionName: "question-63",
-            id: "question-63",
+            topicName: 'how-cars-are-made',
+            questionName: 'question-63',
+            id: 'question-63',
             question: <div>Перечисли этапы сборки автомобиля.</div>,
             answer: (
               <div>
@@ -1022,13 +1022,13 @@ export const Questions: IGame[] = [
       },
       {
         id: 'highway-code',
-        name: "highway-code",
-        displayName: "Правила дорожного движения",
+        name: 'highway-code',
+        displayName: 'Правила дорожного движения',
         questions: [
           {
-            topicName: "highway-code",
-            questionName: "question-64",
-            id: "question-64",
+            topicName: 'highway-code',
+            questionName: 'question-64',
+            id: 'question-64',
             question: (
               <div>
                 <div className="mb-1">
@@ -1054,9 +1054,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "highway-code",
-            questionName: "question-65",
-            id: "question-65",
+            topicName: 'highway-code',
+            questionName: 'question-65',
+            id: 'question-65',
             question: (
               <div>
                 <div className="mb-1">
@@ -1082,9 +1082,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "highway-code",
-            questionName: "question-66",
-            id: "question-66",
+            topicName: 'highway-code',
+            questionName: 'question-66',
+            id: 'question-66',
             question: (
               <div>
                 <div className="mb-1">
@@ -1114,9 +1114,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "highway-code",
-            questionName: "question-67",
-            id: "question-67",
+            topicName: 'highway-code',
+            questionName: 'question-67',
+            id: 'question-67',
             question: (
               <div>
                 <div className="mb-1">
@@ -1136,9 +1136,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "highway-code",
-            questionName: "question-68",
-            id: "question-68",
+            topicName: 'highway-code',
+            questionName: 'question-68',
+            id: 'question-68',
             question: (
               <div>
                 <div className="mb-1">Что обозначают эти знаки приоритета?</div>
@@ -1164,9 +1164,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "highway-code",
-            questionName: "question-69",
-            id: "question-69",
+            topicName: 'highway-code',
+            questionName: 'question-69',
+            id: 'question-69',
             question: (
               <div>
                 <div className="mb-1">
@@ -1185,7 +1185,7 @@ export const Questions: IGame[] = [
                 </div>
                 <Sign32460 className="Question-img-sm m-1" />
                 <div className="mb-1">
-                  <strong>Ограничение максимальной скорости.</strong>{" "}
+                  <strong>Ограничение максимальной скорости.</strong>{' '}
                   Запрещается движение со скоростью (км/ч), превышающей
                   указанную на знаке.
                 </div>
@@ -1193,9 +1193,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "highway-code",
-            questionName: "question-70",
-            id: "question-70",
+            topicName: 'highway-code',
+            questionName: 'question-70',
+            id: 'question-70',
             question: (
               <div>
                 <div className="mb-1">
@@ -1225,13 +1225,13 @@ export const Questions: IGame[] = [
       },
       {
         id: 'safety',
-        name: "safety",
-        displayName: "Правила безопасности",
+        name: 'safety',
+        displayName: 'Правила безопасности',
         questions: [
           {
-            topicName: "safety",
-            questionName: "question-71",
-            id: "question-71",
+            topicName: 'safety',
+            questionName: 'question-71',
+            id: 'question-71',
             question: (
               <div>Назови главные устройства защиты водителя и пассажиров.</div>
             ),
@@ -1246,9 +1246,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "safety",
-            questionName: "question-72",
-            id: "question-72",
+            topicName: 'safety',
+            questionName: 'question-72',
+            id: 'question-72',
             question: <div>Что такое краш-тест? Как его проводят?</div>,
             answer: (
               <div>
@@ -1261,9 +1261,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "safety",
-            questionName: "question-73",
-            id: "question-73",
+            topicName: 'safety',
+            questionName: 'question-73',
+            id: 'question-73',
             question: (
               <div>
                 Какое специальное средство безопасности предусмотрено для детей
@@ -1279,9 +1279,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "safety",
-            questionName: "question-74",
-            id: "question-74",
+            topicName: 'safety',
+            questionName: 'question-74',
+            id: 'question-74',
             question: (
               <div>Как устроено лобовое стекло современного автомобиля?</div>
             ),
@@ -1294,9 +1294,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "safety",
-            questionName: "question-75",
-            id: "question-75",
+            topicName: 'safety',
+            questionName: 'question-75',
+            id: 'question-75',
             question: <div>Что такое ABS?</div>,
             answer: (
               <div>
@@ -1307,9 +1307,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "safety",
-            questionName: "question-76",
-            id: "question-76",
+            topicName: 'safety',
+            questionName: 'question-76',
+            id: 'question-76',
             question: <div>Что такое слепые зоны?</div>,
             answer: (
               <div>
@@ -1322,9 +1322,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "safety",
-            questionName: "question-77",
-            id: "question-77",
+            topicName: 'safety',
+            questionName: 'question-77',
+            id: 'question-77',
             question: <div>Какие виды автомобильной резины существуют?</div>,
             answer: <div>Летняя, зимняя не шипованная и зимняя с шипами.</div>,
           },
@@ -1332,13 +1332,13 @@ export const Questions: IGame[] = [
       },
       {
         id: 'construction',
-        name: "construction",
-        displayName: "Общее строение автомобиля",
+        name: 'construction',
+        displayName: 'Общее строение автомобиля',
         questions: [
           {
-            topicName: "construction",
-            questionName: "question-78",
-            id: "question-78",
+            topicName: 'construction',
+            questionName: 'question-78',
+            id: 'question-78',
             question: <div>Что такое подвеска автомобиля?</div>,
             answer: (
               <div>
@@ -1349,9 +1349,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "construction",
-            questionName: "question-79",
-            id: "question-79",
+            topicName: 'construction',
+            questionName: 'question-79',
+            id: 'question-79',
             question: <div>Как поворачиваются колеса автомобиля?</div>,
             answer: (
               <div>
@@ -1361,9 +1361,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "construction",
-            questionName: "question-80",
-            id: "question-80",
+            topicName: 'construction',
+            questionName: 'question-80',
+            id: 'question-80',
             question: <div>Для чего нужны амортизаторы?</div>,
             answer: (
               <div>
@@ -1373,9 +1373,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "construction",
-            questionName: "question-81",
-            id: "question-81",
+            topicName: 'construction',
+            questionName: 'question-81',
+            id: 'question-81',
             question: (
               <div>
                 Что такое коробка передач? Какие бывают коробки передач?
@@ -1387,16 +1387,16 @@ export const Questions: IGame[] = [
                 двигатель работает на полную мощность. При движении по шоссе
                 колёса крутятся быстро, а двигатель работает в обычном режиме и
                 дополнительная мощность нужна только для того, чтобы увеличить
-                скорость. Для работы в разных режимах нужна{" "}
+                скорость. Для работы в разных режимах нужна{' '}
                 <strong>коробка передач</strong>. Бывают автоматическая и
                 механическая коробки.
               </div>
             ),
           },
           {
-            topicName: "construction",
-            questionName: "question-82",
-            id: "question-82",
+            topicName: 'construction',
+            questionName: 'question-82',
+            id: 'question-82',
             question: <div>Что такое двигатель?</div>,
             answer: (
               <div>
@@ -1408,9 +1408,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "construction",
-            questionName: "question-83",
-            id: "question-83",
+            topicName: 'construction',
+            questionName: 'question-83',
+            id: 'question-83',
             question: <div>Для чего нужен аккумулятор?</div>,
             answer: (
               <div>
@@ -1421,9 +1421,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "construction",
-            questionName: "question-84",
-            id: "question-84",
+            topicName: 'construction',
+            questionName: 'question-84',
+            id: 'question-84',
             question: <div>Какие бывают тормоза?</div>,
             answer: (
               <div>
@@ -1436,20 +1436,20 @@ export const Questions: IGame[] = [
       },
       {
         id: 'lessons',
-        name: "lessons",
-        displayName: "Уроки на учебной площадке",
+        name: 'lessons',
+        displayName: 'Уроки на учебной площадке',
         questions: [
           {
-            topicName: "lessons",
-            questionName: "question-85",
-            id: "question-85",
+            topicName: 'lessons',
+            questionName: 'question-85',
+            id: 'question-85',
             question: <div>Что показывает тахометр?</div>,
             answer: <div>Тахометр показывает обороты двигателя.</div>,
           },
           {
-            topicName: "lessons",
-            questionName: "question-86",
-            id: "question-86",
+            topicName: 'lessons',
+            questionName: 'question-86',
+            id: 'question-86',
             question: <div>Что показывает спидометр?</div>,
             answer: (
               <div>
@@ -1459,9 +1459,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "lessons",
-            questionName: "question-87",
-            id: "question-87",
+            topicName: 'lessons',
+            questionName: 'question-87',
+            id: 'question-87',
             question: (
               <div>Что должен сделать водитель перед началом движения?</div>
             ),
@@ -1475,9 +1475,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "lessons",
-            questionName: "question-88",
-            id: "question-88",
+            topicName: 'lessons',
+            questionName: 'question-88',
+            id: 'question-88',
             question: <div>От чего зависит длина тормозного пути?</div>,
             answer: (
               <div>
@@ -1487,9 +1487,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "lessons",
-            questionName: "question-89",
-            id: "question-89",
+            topicName: 'lessons',
+            questionName: 'question-89',
+            id: 'question-89',
             question: (
               <div>
                 Какой автомобиль остановится быстрее: легковой или грузовой?
@@ -1503,9 +1503,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "lessons",
-            questionName: "question-90",
-            id: "question-90",
+            topicName: 'lessons',
+            questionName: 'question-90',
+            id: 'question-90',
             question: (
               <div>
                 На какой дороге длина тормозного пути будет самой большой: на
@@ -1517,9 +1517,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "lessons",
-            questionName: "question-91",
-            id: "question-91",
+            topicName: 'lessons',
+            questionName: 'question-91',
+            id: 'question-91',
             question: (
               <div>
                 Что обязательно должно быть в автомобиле на случай
@@ -1537,13 +1537,13 @@ export const Questions: IGame[] = [
       },
       {
         id: 'service',
-        name: "service",
-        displayName: "Обслуживание автомобиля",
+        name: 'service',
+        displayName: 'Обслуживание автомобиля',
         questions: [
           {
-            topicName: "service",
-            questionName: "question-92",
-            id: "question-92",
+            topicName: 'service',
+            questionName: 'question-92',
+            id: 'question-92',
             question: <div>Что находится под капотом автомобиля?</div>,
             answer: (
               <div>
@@ -1555,9 +1555,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "service",
-            questionName: "question-93",
-            id: "question-93",
+            topicName: 'service',
+            questionName: 'question-93',
+            id: 'question-93',
             question: <div>Что водитель должен регулярно проверять?</div>,
             answer: (
               <div>
@@ -1568,9 +1568,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "service",
-            questionName: "question-94",
-            id: "question-94",
+            topicName: 'service',
+            questionName: 'question-94',
+            id: 'question-94',
             question: <div>Зачем водители приезжают в автосервис?</div>,
             answer: (
               <div>
@@ -1582,9 +1582,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "service",
-            questionName: "question-95",
-            id: "question-95",
+            topicName: 'service',
+            questionName: 'question-95',
+            id: 'question-95',
             question: <div>Что такое шиномонтаж?</div>,
             answer: (
               <div>
@@ -1596,9 +1596,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "service",
-            questionName: "question-96",
-            id: "question-96",
+            topicName: 'service',
+            questionName: 'question-96',
+            id: 'question-96',
             question: <div>Для чего делают балансировку колёс?</div>,
             answer: (
               <div>
@@ -1608,9 +1608,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "service",
-            questionName: "question-97",
-            id: "question-97",
+            topicName: 'service',
+            questionName: 'question-97',
+            id: 'question-97',
             question: <div>Для чего автомобиль поднимают на подъёмнике?</div>,
             answer: (
               <div>
@@ -1622,9 +1622,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "service",
-            questionName: "question-98",
-            id: "question-98",
+            topicName: 'service',
+            questionName: 'question-98',
+            id: 'question-98',
             question: (
               <div>
                 Как доставить в автомастерскую пострадавший в аварии автомобиль?
@@ -1640,14 +1640,14 @@ export const Questions: IGame[] = [
         ],
       },
       {
-        id: "first-aid",
-        name: "first-aid",
-        displayName: "Оказание первой помощи при ДТП",
+        id: 'first-aid',
+        name: 'first-aid',
+        displayName: 'Оказание первой помощи при ДТП',
         questions: [
           {
-            topicName: "first-aid",
-            questionName: "question-99",
-            id: "question-99",
+            topicName: 'first-aid',
+            questionName: 'question-99',
+            id: 'question-99',
             question: <div>Что должно лежать в аптечке?</div>,
             answer: (
               <div>
@@ -1657,25 +1657,25 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "first-aid",
-            questionName: "question-100",
-            id: "question-100",
+            topicName: 'first-aid',
+            questionName: 'question-100',
+            id: 'question-100',
             question: <div>Какой номер нужно набрать, чтобы вызвать МЧС?</div>,
             answer: <div>112</div>,
           },
           {
-            topicName: "first-aid",
-            questionName: "question-101",
-            id: "question-101",
+            topicName: 'first-aid',
+            questionName: 'question-101',
+            id: 'question-101',
             question: (
               <div>Какой номер нужно набрать, чтобы вызвать скорую помощь?</div>
             ),
             answer: <div>112 или 103</div>,
           },
           {
-            topicName: "first-aid",
-            questionName: "question-102",
-            id: "question-102",
+            topicName: 'first-aid',
+            questionName: 'question-102',
+            id: 'question-102',
             question: <div>Что нужно делать, если рядом произошло ДТП?</div>,
             answer: (
               <div>
@@ -1684,9 +1684,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "first-aid",
-            questionName: "question-103",
-            id: "question-103",
+            topicName: 'first-aid',
+            questionName: 'question-103',
+            id: 'question-103',
             question: (
               <div>
                 Какой номер нужно набрать, чтобы вызвать сотрудников полиции?
@@ -1695,9 +1695,9 @@ export const Questions: IGame[] = [
             answer: <div>112 или 102</div>,
           },
           {
-            topicName: "first-aid",
-            questionName: "question-104",
-            id: "question-104",
+            topicName: 'first-aid',
+            questionName: 'question-104',
+            id: 'question-104',
             question: (
               <div>
                 Какой номер нужно набрать, чтобы вызвать пожарную команду?
@@ -1706,9 +1706,9 @@ export const Questions: IGame[] = [
             answer: <div>112 или 101</div>,
           },
           {
-            topicName: "first-aid",
-            questionName: "question-105",
-            id: "question-105",
+            topicName: 'first-aid',
+            questionName: 'question-105',
+            id: 'question-105',
             question: (
               <div>
                 Какую информацию нужно сообщить, когда звонишь по телефону
@@ -1727,13 +1727,13 @@ export const Questions: IGame[] = [
       },
       {
         id: 'tech-stuff',
-        name: "tech-stuff",
-        displayName: "Знание устройств и механизмов",
+        name: 'tech-stuff',
+        displayName: 'Знание устройств и механизмов',
         questions: [
           {
-            topicName: "tech-stuff",
-            questionName: "question-106",
-            id: "question-106",
+            topicName: 'tech-stuff',
+            questionName: 'question-106',
+            id: 'question-106',
             question: <div>Как устроены дисковые тормоза?</div>,
             answer: (
               <div>
@@ -1744,9 +1744,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "tech-stuff",
-            questionName: "question-107",
-            id: "question-107",
+            topicName: 'tech-stuff',
+            questionName: 'question-107',
+            id: 'question-107',
             question: <div>Как устроены барабанные тормоза?</div>,
             answer: (
               <div>
@@ -1757,9 +1757,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "tech-stuff",
-            questionName: "question-108",
-            id: "question-108",
+            topicName: 'tech-stuff',
+            questionName: 'question-108',
+            id: 'question-108',
             question: <div>Расскажи об устройстве, поворачивающем колеса.</div>,
             answer: (
               <div>
@@ -1771,9 +1771,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "tech-stuff",
-            questionName: "question-109",
-            id: "question-109",
+            topicName: 'tech-stuff',
+            questionName: 'question-109',
+            id: 'question-109',
             question: <div>Что находится в руле?</div>,
             answer: (
               <div>
@@ -1785,9 +1785,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "tech-stuff",
-            questionName: "question-110",
-            id: "question-110",
+            topicName: 'tech-stuff',
+            questionName: 'question-110',
+            id: 'question-110',
             question: <div>Как работает ABS?</div>,
             answer: (
               <div>
@@ -1801,9 +1801,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "tech-stuff",
-            questionName: "question-111",
-            id: "question-111",
+            topicName: 'tech-stuff',
+            questionName: 'question-111',
+            id: 'question-111',
             question: <div>Как устроена подвеска автомобиля?</div>,
             answer: (
               <div>
@@ -1814,9 +1814,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "tech-stuff",
-            questionName: "question-112",
-            id: "question-112",
+            topicName: 'tech-stuff',
+            questionName: 'question-112',
+            id: 'question-112',
             question: <div>Как работают амортизаторы?</div>,
             answer: (
               <div>
@@ -1831,13 +1831,13 @@ export const Questions: IGame[] = [
       },
       {
         id: 'city-drive',
-        name: "city-drive",
-        displayName: "Езда по городу",
+        name: 'city-drive',
+        displayName: 'Езда по городу',
         questions: [
           {
-            topicName: "city-drive",
-            questionName: "question-113",
-            id: "question-113",
+            topicName: 'city-drive',
+            questionName: 'question-113',
+            id: 'question-113',
             question: (
               <div>
                 Как можно понять, какие маневры собирается совершить едущий
@@ -1852,9 +1852,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "city-drive",
-            questionName: "question-114",
-            id: "question-114",
+            topicName: 'city-drive',
+            questionName: 'question-114',
+            id: 'question-114',
             question: (
               <div>
                 Светятся белые задние фонари. Какой манёвр совершает водитель?
@@ -1868,9 +1868,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "city-drive",
-            questionName: "question-115",
-            id: "question-115",
+            topicName: 'city-drive',
+            questionName: 'question-115',
+            id: 'question-115',
             question: (
               <div>Мигают передние и задние жёлтые огни. Что это значит?</div>
             ),
@@ -1883,9 +1883,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "city-drive",
-            questionName: "question-116",
-            id: "question-116",
+            topicName: 'city-drive',
+            questionName: 'question-116',
+            id: 'question-116',
             question: (
               <div>
                 Сколько педалей у машины с автоматической коробкой передач?
@@ -1900,9 +1900,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "city-drive",
-            questionName: "question-117",
-            id: "question-117",
+            topicName: 'city-drive',
+            questionName: 'question-117',
+            id: 'question-117',
             question: (
               <div>
                 Какие педали у автомобиля с механической коробкой передач?
@@ -1916,9 +1916,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "city-drive",
-            questionName: "question-118",
-            id: "question-118",
+            topicName: 'city-drive',
+            questionName: 'question-118',
+            id: 'question-118',
             question: (
               <div>
                 Какие буквы используются в российских автомобильных номерах?
@@ -1933,9 +1933,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "city-drive",
-            questionName: "question-119",
-            id: "question-119",
+            topicName: 'city-drive',
+            questionName: 'question-119',
+            id: 'question-119',
             question: (
               <div>
                 Как водитель показывает, что собирается поворачивать вправо или
@@ -1953,14 +1953,14 @@ export const Questions: IGame[] = [
         ],
       },
       {
-        id: "difficult-ride",
-        name: "difficult-ride",
-        displayName: "Езда в сложных условиях",
+        id: 'difficult-ride',
+        name: 'difficult-ride',
+        displayName: 'Езда в сложных условиях',
         questions: [
           {
-            topicName: "difficult-ride",
-            questionName: "question-120",
-            id: "question-120",
+            topicName: 'difficult-ride',
+            questionName: 'question-120',
+            id: 'question-120',
             question: (
               <div>
                 Что такое дистанция между автомобилями? Зачем ее соблюдать?
@@ -1975,9 +1975,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "difficult-ride",
-            questionName: "question-121",
-            id: "question-121",
+            topicName: 'difficult-ride',
+            questionName: 'question-121',
+            id: 'question-121',
             question: (
               <div>Когда нужно увеличить дистанцию между автомобилями?</div>
             ),
@@ -1989,21 +1989,21 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "difficult-ride",
-            questionName: "question-122",
-            id: "question-122",
+            topicName: 'difficult-ride',
+            questionName: 'question-122',
+            id: 'question-122',
             question: <div>Для чего нужны противотуманные фары?</div>,
             answer: (
               <div>
                 Противотуманные фары включают в дополнение к основному свету в
-                условиях плохой видимости (снег, дождь, туман){" "}
+                условиях плохой видимости (снег, дождь, туман){' '}
               </div>
             ),
           },
           {
-            topicName: "difficult-ride",
-            questionName: "question-123",
-            id: "question-123",
+            topicName: 'difficult-ride',
+            questionName: 'question-123',
+            id: 'question-123',
             question: (
               <div>
                 Какое стиль управления менее опасный: плавный или резкий?
@@ -2019,9 +2019,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "difficult-ride",
-            questionName: "question-124",
-            id: "question-124",
+            topicName: 'difficult-ride',
+            questionName: 'question-124',
+            id: 'question-124',
             question: <div>Что такое габаритные огни?</div>,
             answer: (
               <div>
@@ -2031,9 +2031,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "difficult-ride",
-            questionName: "question-125",
-            id: "question-125",
+            topicName: 'difficult-ride',
+            questionName: 'question-125',
+            id: 'question-125',
             question: <div>Для чего нужны дневные ходовые огни?</div>,
             answer: (
               <div>
@@ -2043,9 +2043,9 @@ export const Questions: IGame[] = [
             ),
           },
           {
-            topicName: "difficult-ride",
-            questionName: "question-126",
-            id: "question-126",
+            topicName: 'difficult-ride',
+            questionName: 'question-126',
+            id: 'question-126',
             question: <div>Что такое ближний и дальний свет?</div>,
             answer: (
               <div>
