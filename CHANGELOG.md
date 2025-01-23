@@ -1,3 +1,12 @@
+# [1.11.0](https://github.com/dgusakov/bimbimon-landing/compare/1.10.0...1.11.0) (2025-01-23)
+
+
+### Features
+
+* Youtube moves to Rutube ([#93](https://github.com/dgusakov/bimbimon-landing/issues/93)) ([7051c90](https://github.com/dgusakov/bimbimon-landing/commit/7051c90f41437f4214119670e389b95562804b16))
+
+
+
 # [1.10.0](https://github.com/dgusakov/bimbimon-landing/compare/1.9.0...1.10.0) (2024-02-19)
 
 
@@ -87,16 +96,6 @@
 ### Bug Fixes
 
 * muscles video url ([507d12d](https://github.com/dgusakov/bimbimon-landing/commit/507d12d2558b2c26e7d870ead7f39780e2dc0cc8))
-
-
-
-# [1.3.0](https://github.com/dgusakov/bimbimon-landing/compare/1.2.1...1.3.0) (2022-06-09)
-
-
-### Features
-
-* Add videos and buy pages ([75b74fa](https://github.com/dgusakov/bimbimon-landing/commit/75b74faab5dea42cdf178faa99235874773d252f))
-* Add videos router ([b65ffea](https://github.com/dgusakov/bimbimon-landing/commit/b65ffea364fe84cd98190372bc28e4e69d403b88))
 
 
 
