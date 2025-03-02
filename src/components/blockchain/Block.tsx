@@ -1,33 +1,51 @@
 import "../../css/App.css";
-import { useState } from "react";
-import { BLOCK_GROUPS } from '../../data/blockchain';
+import { useState, useEffect } from "react";
+import type { BlockGroup } from '../../data/blockchain';
 
-// Block component
-function Block(props: any) {
-  // Get the group and id props from the parent component
-  const group = Number(props.group) || 0;
-  const id = Number(props.id) - 1 || 0;
+interface BlockProps {
+  className: string;
+  id: string;
+  onClick: () => void;
+  group: number;
+  activated: boolean;
+  difficulty: 'easy' | 'hard';
+  blockGroups: BlockGroup[];
+}
 
-  // Get the corresponding BlockIcon component based on the group and id
-  const BlockIcon = BLOCK_GROUPS[group][id];
+function Block({ className, id, onClick, group, activated, difficulty, blockGroups }: BlockProps) {
+  const blockId = Number(id) - 1 || 0;
+  const BlockIcon = blockGroups[group][blockId];
+  const [isHinting, setIsHinting] = useState(false);
 
-  // State to track the activation status of the block
-  const [activated, setActivated] = useState(false);
+  // Add difficulty-based animations and effects
+  useEffect(() => {
+    if (difficulty === 'hard' && activated) {
+      const timeout = setTimeout(() => {
+        onClick(); // Auto-deactivate after delay in hard mode
+      }, 2000);
+      return () => clearTimeout(timeout);
+    }
+  }, [activated, difficulty, onClick]);
 
-  // Function to toggle the activation state when the block is clicked
-  const toggleActivation = () => {
-    setActivated(!activated);
-    // Call the onClick prop passed from the parent component
-    props.onClick();
+  const handleClick = () => {
+    onClick();
+    setIsHinting(true);
+    setTimeout(() => setIsHinting(false), 300);
   };
 
-  // Determine the class name based on the activation status
-  const className = activated ? "block-icon activated" : "block";
+  // Apply different styles based on difficulty
+  const getBlockStyle = () => {
+    const baseStyle = activated ? "block-icon activated" : "block";
+    const difficultyStyles = {
+      easy: "",
+      hard: "hard-difficulty"
+    };
+    return `${baseStyle} ${difficultyStyles[difficulty]} ${isHinting ? 'hinting' : ''}`;
+  };
 
-  // Render the Block component with the BlockIcon and onClick handler
   return (
-    <div className="block" onClick={toggleActivation}>
-      <BlockIcon className={className} onClick={props.onClick} id={props.id} />
+    <div className="block" onClick={handleClick}>
+      <BlockIcon className={getBlockStyle()} id={id} />
     </div>
   );
 }
@@ -35,12 +53,13 @@ function Block(props: any) {
 // Props for the BigBlock component
 interface BigBlockProps {
   group: number;
+  blockGroups: BlockGroup[];
 }
 
 // BigBlock component
-export const BigBlock: React.FC<BigBlockProps> = ({ group }) => {
+export const BigBlock: React.FC<BigBlockProps> = ({ group, blockGroups }) => {
   // Get the corresponding BigBlockIcon component based on the group
-  const BigBlockIcon = BLOCK_GROUPS[group][4];
+  const BigBlockIcon = blockGroups[group][4];
 
   // Render the BigBlock component with the BigBlockIcon
   return (
