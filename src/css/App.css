@@ -159,3 +159,9 @@ html {
   margin-top: 10px; 
   
 }
+
+.jumbotron {
+  background-color: #d0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+}
