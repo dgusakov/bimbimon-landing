@@ -1,3 +1,12 @@
+# [1.12.0](https://github.com/dgusakov/bimbimon-landing/compare/1.11.0...1.12.0) (2025-05-22)
+
+
+### Features
+
+* Add new site banner ([aaec4c8](https://github.com/dgusakov/bimbimon-landing/commit/aaec4c8570785a7fbcdf734d5915e779e8594992))
+
+
+
 # [1.11.0](https://github.com/dgusakov/bimbimon-landing/compare/1.10.0...1.11.0) (2025-01-23)
 
 
@@ -87,15 +96,6 @@
 
 
 ## [1.3.2](https://github.com/dgusakov/bimbimon-landing/compare/1.3.1...1.3.2) (2022-08-08)
-
-
-
-## [1.3.1](https://github.com/dgusakov/bimbimon-landing/compare/1.3.0...1.3.1) (2022-06-09)
-
-
-### Bug Fixes
-
-* muscles video url ([507d12d](https://github.com/dgusakov/bimbimon-landing/commit/507d12d2558b2c26e7d870ead7f39780e2dc0cc8))
 
 
 
