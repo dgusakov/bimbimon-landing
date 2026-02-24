@@ -1,3 +1,12 @@
+# [1.13.0](https://github.com/dgusakov/bimbimon-landing/compare/1.12.0...1.13.0) (2026-02-24)
+
+
+### Features
+
+* Update link to a new site ([#98](https://github.com/dgusakov/bimbimon-landing/issues/98)) ([e8b110f](https://github.com/dgusakov/bimbimon-landing/commit/e8b110fd98912f47b832aeb35ce4ef5e1ca65f21))
+
+
+
 # [1.12.0](https://github.com/dgusakov/bimbimon-landing/compare/1.11.0...1.12.0) (2025-05-22)
 
 
@@ -92,10 +101,6 @@
 ### Features
 
 * Add Emotions game ([#34](https://github.com/dgusakov/bimbimon-landing/issues/34)) ([96c4b55](https://github.com/dgusakov/bimbimon-landing/commit/96c4b558a53ef4e139195c1fced5c199bc694549))
-
-
-
-## [1.3.2](https://github.com/dgusakov/bimbimon-landing/compare/1.3.1...1.3.2) (2022-08-08)
 
 
 
