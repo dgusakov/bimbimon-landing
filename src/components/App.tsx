@@ -34,7 +34,7 @@ function App() {
             <Route path="/games" element={<GamesMain path="/games" />} />
             <Route
               path="/games/crypto"
-              element={<Blockchain path="/games" />}
+              element={<Blockchain />}
             />
             <Route path="/games/:game" element={<Game path="/games" />} />
             <Route path="/videos" element={<Videos />} />
