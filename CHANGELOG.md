@@ -1,3 +1,13 @@
+# [1.14.0](https://github.com/dgusakov/bimbimon-landing/compare/1.13.0...1.14.0) (2026-07-27)
+
+
+### Features
+
+* Remove test deploy ([c6c95f4](https://github.com/dgusakov/bimbimon-landing/commit/c6c95f46b66fc28cb8281df95956dfeb2906a82e))
+* Text ([#100](https://github.com/dgusakov/bimbimon-landing/issues/100)) ([fdc53d0](https://github.com/dgusakov/bimbimon-landing/commit/fdc53d0673a055e94674581933353336e010a67e))
+
+
+
 # [1.13.0](https://github.com/dgusakov/bimbimon-landing/compare/1.12.0...1.13.0) (2026-02-24)
 
 
@@ -92,15 +102,6 @@
 ### Features
 
 * Add new videos links ([18a181c](https://github.com/dgusakov/bimbimon-landing/commit/18a181c0ed7ae47a437491aef224e7cfe24b8c84))
-
-
-
-# [1.4.0](https://github.com/dgusakov/bimbimon-landing/compare/1.3.2...1.4.0) (2022-08-23)
-
-
-### Features
-
-* Add Emotions game ([#34](https://github.com/dgusakov/bimbimon-landing/issues/34)) ([96c4b55](https://github.com/dgusakov/bimbimon-landing/commit/96c4b558a53ef4e139195c1fced5c199bc694549))
 
 
 
